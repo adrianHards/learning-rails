@@ -88,12 +88,11 @@ end
 * if the data type is a string, you don’t need to specify their type. 
 * patient:has_many will result in models and migration files being generated for both Doctor and Patient, with has_many and belongs_to
 
-
-
-
-
-
 #### Controllers
+
+`rails g controller Doctors index save`
+* provide a controller file and corresponding views folder
+* populate controller file with e.g. `def index end` and `index.html.erb` files inside of corresponding views folder
 
 <p align="center"><a href="#top">⬆</a></p>
 
