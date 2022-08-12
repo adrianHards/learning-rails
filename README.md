@@ -4,7 +4,7 @@
 <strong>Ruby</strong>: 3.1.2p20
 
 ### Rails
-* [Rails New](#rails-new)
+* [Rails New](#railsnew.md)
 * [Optional Add-Ons](#optional-add-ons)
 * [Rails Generate](#rails-generate)
 * [Command Line](#command-line)
