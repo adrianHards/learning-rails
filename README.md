@@ -55,12 +55,16 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 <p align="center"><a href="#top">⬆</a></p>
 
 ### Rails Generate
-`rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` <br> <br>
+`rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` <br><br>
+
+<strong>Undo</strong>:
+* `rails d controller name`
+* `rails d model name`
 
 #### Migration
-<strong>Add</strong>: `rails g migration add_name_to_doctors name:string` <br>
-<strong>Remove</strong>: `rails g migration remove_name_from_doctors name:string` <br>
-<strong>Add References</strong>: `rails g migration AddDoctorToPatients doctor:references`
+* `rails g migration add_name_to_doctors name:string` <br>
+* `rails g migration remove_name_from_doctors name:string` <br>
+* `rails g migration AddDoctorToPatients doctor:references`
 
 Add will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
 
@@ -78,6 +82,16 @@ end
 * `rails db:rollback` undoes the last migration, you can then edit the file, and run rails db:migrate again
 
 #### Models
+`rails g model Doctor first_name last_name speciality:text patient:has_many`<br>
+* a database migration that will add a table and add the columns first_name, last_name, and speciality.
+* a model file that will inherit from ApplicationRecord
+* if the data type is a string, you don’t need to specify their type. 
+* patient:has_many will result in models and migration files being generated for both Doctor and Patient, with has_many and belongs_to
+
+
+
+
+
 
 #### Controllers
 
