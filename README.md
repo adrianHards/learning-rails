@@ -61,8 +61,12 @@ Finally, run `bundle install` to install any additional gems now included in you
 `rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` <br>
 
 #### Migration
-<strong>Add</strong>: `rails g migration add_name_to_doctors name:string`
-* will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
+<strong>Add</strong>: `rails g migration add_name_to_doctors name:string` <br>
+<strong>Remove</strong>: `rails g migration remove_name_from_doctors name:string` <br>
+<strong>Add References</strong>: `rails g migration AddDoctorToPatients doctor:references>
+
+Add will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
+
 ```
 class AddNameToDoctors < ActiveRecord::Migration[7.0]
    def change
@@ -70,8 +74,7 @@ class AddNameToDoctors < ActiveRecord::Migration[7.0]
    end
 end
 ```
-<strong>Remove</strong>: `rails g migration remove_name_from_doctors name:string` <br>
-<strong>Add References</strong>: `rails g migration AddDoctorToPatients doctor:references`
+
 
 <br>
 
