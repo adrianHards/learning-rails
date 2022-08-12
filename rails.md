@@ -28,6 +28,8 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For now,
 
 <p align="center"><a href="#top">⬆</a></p>
 
+---
+
 ### Optional Add-Ons
 
 1. Add any gems you want to include in your <strong>Gemfile</strong>. I'll be adding [Hotwire::Livereload](https://kirillplatonov.com/posts/hotwire-livereload/) which enables live reloading when files are changed without the need for a full browser refresh.
@@ -46,6 +48,8 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 ```
 4. Finally, run `bundle install` to install any additional gems now included in your Gemfile.
 <p align="center"><a href="#top">⬆</a></p>
+
+---
 
 ### Rails Generate
 `rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` <br><br>
@@ -88,6 +92,8 @@ end
 * populate controller file with e.g. `def index end` and `index.html.erb` files inside of corresponding views folder
 
 <p align="center"><a href="#top">⬆</a></p>
+
+---
 
 ### [Command Line](https://guides.rubyonrails.org/command_line.html)
 
