@@ -74,6 +74,7 @@ end
 <strong>Add References</strong>: `rails g migration AddDoctorToPatients doctor:references`
 
 <br>
+
 Remember to then update the schema with `rails db:migrate`
 
 #### Models
