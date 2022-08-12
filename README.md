@@ -7,9 +7,8 @@ Shortcuts
 
 * [Rails New](#rails-new)
 * [Optional Add-Ons](#optional-add-ons)
-* [Terminal Commands](#terminal-commands)
-
-<br>
+* [Rails Generate](#rails-generate)
+* [Command Line](#command-line)
 
 ### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
@@ -58,7 +57,32 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 Finally, run `bundle install` to install any additional gems now included in your Gemfile.
 <p align="center"><a href="#top">⬆</a></p>
 
-### Optional Add-Ons
+### Rails Generate
+`rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` <br>
+
+#### Migration
+<strong>Add</strong>: `rails g migration add_name_to_doctors name:string`
+* will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
+```
+class AddNameToDoctors < ActiveRecord::Migration[7.0]
+   def change
+     add_column :doctors, :name, :string
+   end
+end
+```
+<strong>Remove</strong>: `rails g migration remove_name_from_doctors name:string` <br>
+<strong>Add References</strong>: `rails g migration AddDoctorToPatients doctor:references`
+
+<br>
+Remember to then update the schema with `rails db:migrate`
+
+#### Models
+
+#### Controllers
+
+<p align="center"><a href="#top">⬆</a></p>
+
+### Command Line
 
 <p align="center"><a href="#top">⬆</a></p>
 
