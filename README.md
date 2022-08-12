@@ -4,7 +4,7 @@
 <strong>Ruby</strong>: 3.1.2p20
 
 ### Rails
-* [Rails New](/railsnew.md)
+* [Rails New](/RailsNew.md)
 * https://github.com/adrianHards/rails-practice/edit/main/README.md
 * [Optional Add-Ons](#optional-add-ons)
 * [Rails Generate](#rails-generate)
