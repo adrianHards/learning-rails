@@ -28,17 +28,16 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For now,
 
 <p align="center"><a href="#top">⬆</a></p>
 
-<!-- ### Optional Add-Ons
+### Optional Add-Ons
 
-`cd myapp` and add any gems you want to include in your Gemfile. I'll be adding [Hotwire::Livereload](https://kirillplatonov.com/posts/hotwire-livereload/) which enables live reloading when files are changed without the need for a full browser refresh.
+Add any gems you want to include in your <strong>Gemfile</strong>. I'll be adding [Hotwire::Livereload](https://kirillplatonov.com/posts/hotwire-livereload/) which enables live reloading when files are changed without the need for a full browser refresh.
 
 ```
 group :development do
   gem "hotwire-livereload"
 end
 ```
-
-You'll then need run install script `rails livereload:install`
+We'll then need run install script `rails livereload:install`
 <br>
 <br>
 Tailwind uses a [just-in-time compiler](https://v2.tailwindcss.com/docs/just-in-time-mode), so we'll need to specify an additional path for livereload to listen to for any (just-in-time) changes.
@@ -49,5 +48,5 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 ```
 
 Finally, run `bundle install` to install any additional gems now included in your Gemfile.
-<p align="center"><a href="#top">⬆</a></p> -->
+<p align="center"><a href="#top">⬆</a></p>
 
