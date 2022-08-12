@@ -3,7 +3,15 @@
 <strong>Rails</strong>: 7.1.0.alpha <br>
 <strong>Ruby</strong>: 3.1.2p20
 
-### [Rails new](https://guides.rubyonrails.org/getting_started.html)
+Shortcuts
+
+* [Rails New](#rails-new)
+* [Optional Add-Ons](#optional-add-ons)
+* [Terminal Commands](#terminal-commands)
+
+<br>
+
+### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
 Run `rails new -h` to view all the options you can pass to `rails new`. For now, I've settled with:
 <br>
@@ -48,5 +56,9 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 ```
 
 Finally, run `bundle install` to install any additional gems now included in your Gemfile.
+<p align="center"><a href="#top">⬆</a></p>
+
+### Optional Add-Ons
+
 <p align="center"><a href="#top">⬆</a></p>
 
