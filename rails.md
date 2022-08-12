@@ -1,4 +1,3 @@
-### Rails
 * [Rails New](#rails-new)
 * [Optional Add-Ons](#optional-add-ons)
 * [Rails Generate](#rails-generate)
