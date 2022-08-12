@@ -75,7 +75,7 @@ class AddNameToDoctors < ActiveRecord::Migration[7.0]
    end
 end
 ```
-
+* `rails db:create` have Rails create an empty database for you
 * `rails db:migrate` update the schema
 * `rails db:migrate:reset` drop the database, create it again and run all the migrations
 * `rails db:seed` load data from the file: db/seeds.rb into the database
@@ -96,7 +96,11 @@ end
 
 <p align="center"><a href="#top">⬆</a></p>
 
-### Command Line
+### [Command Line](https://guides.rubyonrails.org/command_line.html)
+
+* `bin/rails console` start rails console
+* `bin/rails routes | grep doctor` only shows us the routes for doctors
+* create custom method to see if [database already exists](https://cpcwood.com/code-snippets/13-check-if-ruby-on-rails-database-exists-using-rake)
 
 <p align="center"><a href="#top">⬆</a></p>
 
