@@ -3,12 +3,14 @@
 <strong>Rails</strong>: 7.1.0.alpha <br>
 <strong>Ruby</strong>: 3.1.2p20
 
-Shortcuts
-
+### Rails
 * [Rails New](#rails-new)
 * [Optional Add-Ons](#optional-add-ons)
 * [Rails Generate](#rails-generate)
 * [Command Line](#command-line)
+### Tailwind
+
+<br>
 
 ### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
