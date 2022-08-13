@@ -1,7 +1,5 @@
 - [Rails New](#rails-new)
 - [Optional Add-Ons](#optional-add-ons)
-- [Rails Generate](#rails-generate)
-  - [Migrations](#migration)
   - [Models](#models)
   - [Controllers](#controllers)
 - [Command Line](#command-line)
@@ -68,9 +66,11 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 * `rails d model name`
 
 #### Migrations
-* `rails g migration add_name_to_doctors name:string` <br>
-* `rails g migration remove_name_from_doctors name:string` <br>
-* `rails g migration add_doctor_to_patients doctor:references`
+```
+rails g migration add_name_to_doctors name:string
+rails g migration remove_name_from_doctors name:string
+rails g migration add_doctor_to_patients doctor:references
+```
 
 The first command will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
 
@@ -81,11 +81,17 @@ class AddNameToDoctors < ActiveRecord::Migration[7.0]
    end
 end
 ```
-* `rails db:create` have Rails create an empty database for you
-* `rails db:migrate` update the schema
-* `rails db:migrate:reset` drop the database, create it again and run all the migrations
-* `rails db:seed` load data from the file: db/seeds.rb into the database
-* `rails db:rollback` undoes the last migration, you can then edit the file, and run rails db:migrate again
+
+* create an empty database for you: <br>
+`rails db:create`
+* update the schema: <br>
+`rails db:migrate`
+* drop the database, create it again and run all the migrations: <br>
+`rails db:migrate:reset`
+* load data from the file: db/seeds.rb into the database <br>
+`rails db:seed`
+undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
+`rails db:rollback`
 
 #### Models
 `rails g model Doctor first_name last_name speciality:text patient:has_many`<br>
