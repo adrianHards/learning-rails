@@ -115,4 +115,6 @@ end
 * `bin/rails console` start rails console
 * `bin/rails routes | grep doctor` only shows us the routes for doctors
 
-<p align="center"><a href="#top">⬆</a></p>
+
+
+<p align="center"><a href="https://github.com/adrianHards/rails-templates">Home</a></p>
