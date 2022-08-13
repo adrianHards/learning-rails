@@ -21,7 +21,8 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 * `-d postgresql` sets Postgres as the database
 <br>
 
-`cd myapp` and run `git branch -m master main` to set the git branch name to main instead of the default master. At this point we can start the server with `bin/dev` (instead of `bin/rails s`) and see our app running at [localhost:3000](http://localhost:3000/). 
+1. `cd myapp` and run `git branch -m master main` to set the git branch name to main instead of the default master. 
+2. At this point we can start the server with `bin/dev` (instead of `bin/rails s`) and see our app running at [localhost:3000](http://localhost:3000/). 
 
 * `rails` vs `bin/rails`: if you select the former, RubyGems will activate the latest version of the rails executable it can find in PATH. This is fine as long as you use this version of Rails in your project. Using the latter ensures your environment uses the versions specified in your project's Gemfile. 
 * `bin/dev` runs `foreman start -f Procfile.dev`. foreman runs multiple commands, including `bin/rails`, at the same time (take a look at Procfile.dev to see what commands are being run).
@@ -63,9 +64,9 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 #### Migration
 * `rails g migration add_name_to_doctors name:string` <br>
 * `rails g migration remove_name_from_doctors name:string` <br>
-* `rails g migration AddDoctorToPatients doctor:references`
+* `rails g migration add_doctor_to_patients doctor:references`
 
-Add will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
+The first command will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
 
 ```
 class AddNameToDoctors < ActiveRecord::Migration[7.0]
