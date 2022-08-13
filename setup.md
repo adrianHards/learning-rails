@@ -5,7 +5,7 @@
 
 ### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
-Run `rails new -h` to view all the options you can pass to `rails new`. For now, I've settled with:
+Run `rails new -h` to view all the options you can pass to `rails new`. For practice apps I've settled with:
 <br>
 
 ```rails new myapp -c tailwind -j esbuild -d postgresql -T -M --skip-active-storage --main```
