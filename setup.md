@@ -55,10 +55,11 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 ---
 
 ### Rails Generate
-`rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` <br><br>
+`rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` 
+<br><br>
 
 <strong>Undo</strong>:
-* `rails d controller name`
+* `rails d controller name index` with options ensures associated
 * `rails d model name`
 
 #### Migration
@@ -102,7 +103,6 @@ end
 
 * `bin/rails console` start rails console
 * `bin/rails routes | grep doctor` only shows us the routes for doctors
-* create custom method to see if [database already exists](https://cpcwood.com/code-snippets/13-check-if-ruby-on-rails-database-exists-using-rake)
-
+* 
 <p align="center"><a href="#top">⬆</a></p>
 
