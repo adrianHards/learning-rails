@@ -6,6 +6,8 @@
   - [Controllers](#controllers)
 - [Command Line](#command-line)
 
+---
+
 ### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
 Run `rails new -h` to view all the options you can pass to `rails new`. For practice apps I've settled with:
