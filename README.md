@@ -8,12 +8,12 @@
 ### Ruby on Rails
 
 * [Rails Setup](/setup.md)
-* [Routes](/routes.md)
-* [Models](/models.md)
-* [Controllers](/controllers.md)
-* [Views](views.md)
+* ~~[Routes](/routes.md)~~
+* ~~[Models](/models.md)~~
+* ~~[Controllers](/controllers.md)~~
+* ~~[Views](views.md)~~
 
 ### Front-End
 
-* [Tailwind](/tailwind.md)
-* [Rails Setup](/react.md)
+* ~~[Tailwind](/tailwind.md)~~
+* [React Setup with Rails API](/react.md)
