@@ -8,6 +8,7 @@
 ### Ruby on Rails
 
 * [Rails Setup](/setup.md)
+* [Rails API Setup with React](/react.md)
 * ~~[Routes](/routes.md)~~
 * ~~[Models](/models.md)~~
 * ~~[Controllers](/controllers.md)~~
@@ -16,4 +17,3 @@
 ### Front-End
 
 * ~~[Tailwind](/tailwind.md)~~
-* [React Setup with Rails API](/react.md)
