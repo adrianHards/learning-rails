@@ -1,5 +1,7 @@
 - [Rails New](#rails-new)
 - [Optional Add-Ons](#optional-add-ons)
+- [Rails Generate](#rails-generate)
+  - [Migrations](#migration)
   - [Models](#models)
   - [Controllers](#controllers)
 - [Command Line](#command-line)
@@ -63,7 +65,7 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 * `rails d controller name index` with options ensures associated views and helpers etc. are also removed
 * `rails d model name`
 
-#### Migration
+#### Migrations
 * `rails g migration add_name_to_doctors name:string` <br>
 * `rails g migration remove_name_from_doctors name:string` <br>
 * `rails g migration add_doctor_to_patients doctor:references`
