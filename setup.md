@@ -1,7 +1,17 @@
-* [Rails New](#rails-new)
-* [Optional Add-Ons](#optional-add-ons)
-* [Rails Generate](#rails-generate)
-* [Command Line](#command-line)
+- [Rails New](#rails-new)
+- [Optional Add-Ons](#optional-add-ons)
+  - [Models](#models)
+  - [Controllers](#controllers)
+- [Command Line](#command-line)
+
+  - [Migration](#migration)
+  - [Models](#models)
+  - [Controllers](#controllers)
+- [Command Line](#command-line)
+
+- [Command Line](#command-line)
+
+---
 
 ### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
@@ -21,10 +31,10 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 * `-d postgresql` sets Postgres as the database
 <br>
 
-1. `cd myapp` and run `git branch -m master main` to set the git branch name to main instead of the default master. 
-2. At this point we can start the server with `bin/dev` (instead of `bin/rails s`) and see our app running at [localhost:3000](http://localhost:3000/). 
+1. `cd myapp` and run `git branch -m master main` to set the git branch name to main instead of the default master.
+2. At this point we can start the server with `bin/dev` (instead of `bin/rails s`) and see our app running at [localhost:3000](http://localhost:3000/).
 
-* `rails` vs `bin/rails`: if you select the former, RubyGems will activate the latest version of the rails executable it can find in PATH. This is fine as long as you use this version of Rails in your project. Using the latter ensures your environment uses the versions specified in your project's Gemfile. 
+* `rails` vs `bin/rails`: if you select the former, RubyGems will activate the latest version of the rails executable it can find in PATH. This is fine as long as you use this version of Rails in your project. Using the latter ensures your environment uses the versions specified in your project's Gemfile.
 * `bin/dev` runs `foreman start -f Procfile.dev`. foreman runs multiple commands, including `bin/rails`, at the same time (take a look at Procfile.dev to see what commands are being run).
 
 <p align="center"><a href="#top">⬆</a></p>
@@ -33,7 +43,7 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 
 ### Optional Add-Ons
 
-1. Add any gems you want to include in your <strong>Gemfile</strong>. 
+1. Add any gems you want to include in your <strong>Gemfile</strong>.
 2. Run `bundle install` to install any additional gems now included in your Gemfile.
 
 <!-- I'll be adding [Hotwire::Livereload](https://kirillplatonov.com/posts/hotwire-livereload/) which enables live reloading when files are changed without the need for a full browser refresh.
@@ -55,7 +65,7 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 ---
 
 ### Rails Generate
-`rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework` 
+`rails g <name of generator> <options> --no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework`
 <br><br>
 
 <strong>Undo</strong>:
@@ -86,7 +96,7 @@ end
 `rails g model Doctor first_name last_name speciality:text patient:has_many`<br>
 * a database migration that will add a table and add the columns first_name, last_name, and speciality.
 * a model file that will inherit from ApplicationRecord
-* if the data type is a string, you don’t need to specify their type. 
+* if the data type is a string, you don’t need to specify their type.
 * patient:has_many will result in models and migration files being generated for both Doctor and Patient, with has_many and belongs_to
 
 #### Controllers
@@ -103,6 +113,5 @@ end
 
 * `bin/rails console` start rails console
 * `bin/rails routes | grep doctor` only shows us the routes for doctors
-* 
+*
 <p align="center"><a href="#top">⬆</a></p>
-
