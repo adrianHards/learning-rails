@@ -1,5 +1,7 @@
 - [Rails New](#rails-new)
 - [Optional Add-Ons](#optional-add-ons)
+- [Rails Generate](#rails-generate)
+  - [Migrations](#migrations)
   - [Models](#models)
   - [Controllers](#controllers)
 - [Command Line](#command-line)
