@@ -58,8 +58,8 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 ---
 
 ### Rails Generate
-`rails g <name of generator> <options>` <br>
-Additional options include: `--no-helper --no-assets --no-controller-specs --no-view-specs --no-test-framework`
+`rails g <name of generator> <options>` <br><br>
+Additional options include: [--no-helper](https://www.rubyguides.com/2020/01/rails-helpers/) and `--no-test-framework`
 <br><br>
 
 <strong>Undo</strong>:
