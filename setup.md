@@ -1,7 +1,10 @@
-* [Rails New](#rails-new)
-* [Optional Add-Ons](#optional-add-ons)
-* [Rails Generate](#rails-generate)
-* [Command Line](#command-line)
+- [Rails New](#rails-new)
+- [Optional Add-Ons](#optional-add-ons)
+- [Rails Generate](#rails-generate)
+  - [Migrations](#migration)
+  - [Models](#models)
+  - [Controllers](#controllers)
+- [Command Line](#command-line)
 
 ### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
