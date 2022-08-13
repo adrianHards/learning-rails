@@ -59,7 +59,7 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 <br><br>
 
 <strong>Undo</strong>:
-* `rails d controller name index` with options ensures associated
+* `rails d controller name index` with options ensures associated views and helpers etc. are also removed
 * `rails d model name`
 
 #### Migration
