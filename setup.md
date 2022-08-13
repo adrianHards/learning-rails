@@ -90,7 +90,7 @@ end
 `rails db:migrate:reset`
 * load data from the file: db/seeds.rb into the database <br>
 `rails db:seed`
-undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
+* undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
 `rails db:rollback`
 
 #### Models
