@@ -1,6 +1,5 @@
 There are two ways to use React with Ruby on Rails (RoR). The first is to build two standalone apps, with the React app on a different repository, communicating with the backend via an API. This can be achieved with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and the Rails CLI. The other is by having both apps in one repository, running side by side.
 <br>
-<br>
 
 ---
 
@@ -17,7 +16,7 @@ cd backend-app
 Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. Add [rack cors](https://github.com/cyu/rack-cors) to the gemfile:  <br><br>
 `gem 'rack-cors'` <br><br>
 Then <br><br>
-`bundle` <br><br>
+`bundle` <br>
 
 And finally update `config/initializers/cors.rbz to allow all origins (*) to make requests ()
 ```
@@ -30,6 +29,7 @@ resource '*',
   end
 end
 ```
+
 
 
 
