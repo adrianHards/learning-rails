@@ -13,7 +13,7 @@ cd backend-app
 <br> <br>
 
 ### 1.1 Setup CORS <br>
-Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. Add [rack cors](https://github.com/cyu/rack-cors) to the gemfile:  <br><br>
+Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. We can implement this with the gem [rack cors](https://github.com/cyu/rack-cors). Run the following to add it to the gemfile:  <br><br>
 `gem 'rack-cors'` <br><br>
 Then <br><br>
 `bundle` <br>
@@ -48,3 +48,5 @@ https://www.youtube.com/watch?v=sh4WrNGDvQM
 https://blog.devgenius.io/create-a-rails-api-with-react-frontend-using-hooks-and-typescript-dcb4e84c3dbf
 
 https://blog.logrocket.com/getting-started-with-create-react-app-d93147444a27/
+
+https://hibbard.eu/rails-react-crud-app/
