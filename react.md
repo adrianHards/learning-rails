@@ -3,7 +3,7 @@ There are two ways to use React with Ruby on Rails (RoR). The first is to build 
 
 ---
 
-## Step 1. Creating the [Rails APi](https://guides.rubyonrails.org/api_app.html) <br><br>
+## Step 1. Creating the [Rails APi](https://guides.rubyonrails.org/api_app.html) <br>
 ```
 rails new backend-app --api -T
 cd backend-app
