@@ -18,7 +18,7 @@ Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.or
 Then <br><br>
 `bundle` <br>
 
-And finally update `config/initializers/cors.rbz to allow all origins (*) to make requests ()
+And finally update `config/initializers/cors.rbz` to allow all origins (*) to make requests ()
 ```
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
