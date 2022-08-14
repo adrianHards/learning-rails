@@ -3,7 +3,7 @@ There are two ways to use React with Ruby on Rails (RoR). The first is to build 
 
 ---
 
-## Step 1. Creating the [Rails APi](https://guides.rubyonrails.org/api_app.html) <br>
+## Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
 ```
 rails new backend-app --api -T
 cd backend-app
@@ -12,7 +12,7 @@ cd backend-app
 * `-T` skips the generation of Minitest::Unit files and folders.
 <br> <br>
 
-### 1.1 Setup CORS <br><br>
+### 1.1 Setup CORS <br>
 Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. Add [rack cors](https://github.com/cyu/rack-cors) to the gemfile:  <br><br>
 `gem 'rack-cors'` <br><br>
 Then <br><br>
