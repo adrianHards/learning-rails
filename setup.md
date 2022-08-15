@@ -39,8 +39,12 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 
 ### Optional Add-Ons
 
-1. Add any gems you want to include in your <strong>Gemfile</strong>.
-2. Run `bundle install` to install any additional gems now included in your Gemfile.
+1. Add any gems you want to include in your <strong>Gemfile</strong>. For example, I like to add `gem "responders"` for [respond_with](https://github.com/heartcombo/responders). 
+2. Run `bundle install` to install any additional gems now included in your Gemfile. For responders, you also need to run:
+```
+bundle install
+bin/rails g responders:install
+```
 
 <!-- I'll be adding [Hotwire::Livereload](https://kirillplatonov.com/posts/hotwire-livereload/) which enables live reloading when files are changed without the need for a full browser refresh.
 
