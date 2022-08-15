@@ -37,7 +37,7 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 
 ---
 
-### Optional Add-Ons
+### Optional
 
 1. Add any gems you want to include in your <strong>Gemfile</strong>. For example, I like to add `gem "responders"` for [respond_with](https://github.com/heartcombo/responders). 
 2. Run `bundle install` to install any additional gems now included in your Gemfile. For responders, you also need to run:
@@ -45,6 +45,7 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 bundle install
 bin/rails g responders:install
 ```
+3. `touch .rubocop.yml` to the root of your project and [disable](https://docs.rubocop.org/rubocop/configuration.html) checks here. 
 
 <!-- I'll be adding [Hotwire::Livereload](https://kirillplatonov.com/posts/hotwire-livereload/) which enables live reloading when files are changed without the need for a full browser refresh.
 
