@@ -40,7 +40,7 @@ end
 
 
 
-
+<!-- 
 https://www.section.io/engineering-education/how-to-integrate-a-react-application-with-rails-api/
 
 https://www.youtube.com/watch?v=sh4WrNGDvQM
@@ -50,3 +50,4 @@ https://blog.devgenius.io/create-a-rails-api-with-react-frontend-using-hooks-and
 https://blog.logrocket.com/getting-started-with-create-react-app-d93147444a27/
 
 https://hibbard.eu/rails-react-crud-app/
+ -->
