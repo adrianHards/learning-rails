@@ -1,7 +1,5 @@
 - [Rails New](#rails-new)
 - [Optional Add-Ons](#optional-add-ons)
-- [Rails Generate](#rails-generate)
-  - [Migrations](#migrations)
   - [Models](#models)
   - [Controllers](#controllers)
 - [Command Line](#command-line)
@@ -31,6 +29,7 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 
 * `rails` vs `bin/rails`: if you select the former, RubyGems will activate the latest version of the rails executable it can find in PATH. This is fine as long as you use this version of Rails in your project. Using the latter ensures your environment uses the versions specified in your project's Gemfile.
 * `bin/dev` runs `foreman start -f Procfile.dev`. foreman runs multiple commands, including `bin/rails`, at the same time (take a look at Procfile.dev to see what commands are being run).
+* `gh repo create --public --source=. # will create a public repo on GitHubz`
 
 <p align="center"><a href="#top">⬆</a></p>
 
