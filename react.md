@@ -11,7 +11,7 @@ cd backend-app
 * `--api` inherits ApplicationController from ActionController::API instead of ActionController::Base (thus omitting views, helpers, and assets)
 * `-T` skips the generation of Minitest::Unit files and folders.
 <br> <br>
-
+<!-- 
 ### 1.1 Setup CORS <br>
 Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. We can implement this with the gem [rack cors](https://github.com/cyu/rack-cors). Run the following to add it to the gemfile:  <br><br>
 `gem 'rack-cors'` <br><br>
@@ -32,14 +32,7 @@ end
 ... <br>
 To be continued <br>
 ...
-
-
-
-
-
-
-
-
+ -->
 
 <!-- 
 https://www.section.io/engineering-education/how-to-integrate-a-react-application-with-rails-api/
