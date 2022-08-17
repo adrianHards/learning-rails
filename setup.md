@@ -72,7 +72,7 @@ Additional options include: [--no-helper](https://www.rubyguides.com/2020/01/rai
 <br><br>
 
 <strong>Undo</strong>:
-* `rails d controller name`
+* `rails d controller name <actions>`
 * `rails d model name`
 
 #### Migrations
