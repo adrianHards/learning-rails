@@ -1,4 +1,6 @@
-There are two ways to use React with Ruby on Rails (RoR). The first is to build two standalone apps, with the React app on a different repository, communicating with the backend via an API. This can be achieved with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and the Rails CLI. The other is by having both apps in one repository, running side by side.
+# Incomplete
+
+There are two ways to use React with Ruby on Rails (RoR). The first is to build two standalone apps, with the React app on a different repository, communicating with the backend via an API. This can be achieved with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and the Rails CLI. The other is by having both apps in one repository, running side by side. Here, I'll be doing the former. 
 <br>
 
 ---
@@ -11,14 +13,14 @@ cd backend-app
 * `--api` inherits ApplicationController from ActionController::API instead of ActionController::Base (thus omitting views, helpers, and assets)
 * `-T` skips the generation of Minitest::Unit files and folders.
 <br> <br>
-
+<!-- 
 ### 1.1 Setup CORS <br>
 Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. We can implement this with the gem [rack cors](https://github.com/cyu/rack-cors). Run the following to add it to the gemfile:  <br><br>
 `gem 'rack-cors'` <br><br>
 Then <br><br>
 `bundle` <br>
 
-And finally update `config/initializers/cors.rbz` to allow all origins (*) to make requests ()
+And finally update `config/initializers/cors.rbz` to allow all origins (*) to make requests (for testing purposes only)
 ```
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
@@ -29,18 +31,12 @@ resource '*',
   end
 end
 ```
+... <br>
+To be continued <br>
+...
+ -->
 
-
-
-
-
-
-
-
-
-
-
-
+<!-- 
 https://www.section.io/engineering-education/how-to-integrate-a-react-application-with-rails-api/
 
 https://www.youtube.com/watch?v=sh4WrNGDvQM
@@ -50,3 +46,4 @@ https://blog.devgenius.io/create-a-rails-api-with-react-frontend-using-hooks-and
 https://blog.logrocket.com/getting-started-with-create-react-app-d93147444a27/
 
 https://hibbard.eu/rails-react-crud-app/
+ -->

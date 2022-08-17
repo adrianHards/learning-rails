@@ -1,5 +1,5 @@
 - [Rails New](#rails-new)
-- [Optional Add-Ons](#optional-add-ons)
+- [Optional](#optional)
   - [Models](#models)
   - [Controllers](#controllers)
 - [Command Line](#command-line)
@@ -26,19 +26,25 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 
 1. `cd myapp` and run `git branch -m master main` to set the git branch name to main instead of the default master.
 2. At this point we can start the server with `bin/dev` (instead of `bin/rails s`) and see our app running at [localhost:3000](http://localhost:3000/).
+3. `open http://localhost:3000`
 
 * `rails` vs `bin/rails`: if you select the former, RubyGems will activate the latest version of the rails executable it can find in PATH. This is fine as long as you use this version of Rails in your project. Using the latter ensures your environment uses the versions specified in your project's Gemfile.
 * `bin/dev` runs `foreman start -f Procfile.dev`. foreman runs multiple commands, including `bin/rails`, at the same time (take a look at Procfile.dev to see what commands are being run).
-* `gh repo create --public --source=. # will create a public repo on GitHubz`
+* `gh repo create --public --source=.` will create a public repo on GitHub
 
 <p align="center"><a href="#top">⬆</a></p>
 
 ---
 
-### Optional Add-Ons
+### Optional
 
-1. Add any gems you want to include in your <strong>Gemfile</strong>.
-2. Run `bundle install` to install any additional gems now included in your Gemfile.
+1. Add any gems you want to include in your <strong>Gemfile</strong>. For example, I like to add `gem "responders"` for [respond_with](https://github.com/heartcombo/responders).
+2. Run `bundle install` to install any additional gems now included in your Gemfile. For responders, you also need to run:
+```
+bundle install
+bin/rails g responders:install
+```
+3. `touch .rubocop.yml` to the root of your project and [disable](https://docs.rubocop.org/rubocop/configuration.html) checks here.
 
 <!-- I'll be adding [Hotwire::Livereload](https://kirillplatonov.com/posts/hotwire-livereload/) which enables live reloading when files are changed without the need for a full browser refresh.
 
@@ -64,7 +70,7 @@ Additional options include: [--no-helper](https://www.rubyguides.com/2020/01/rai
 <br><br>
 
 <strong>Undo</strong>:
-* `rails d controller name index`
+* `rails d controller name <actions>`
 * `rails d model name`
 
 #### Migrations
