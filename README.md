@@ -14,10 +14,6 @@
 * ~~[Controllers](/controllers.md)~~
 * ~~[Views](views.md)~~
 
-### Front-End
-
-* ~~[Tailwind](/tailwind.md)~~
-
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
 </p>
