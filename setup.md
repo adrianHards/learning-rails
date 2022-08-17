@@ -1,7 +1,6 @@
 - [Rails New](#rails-new)
 - [Optional](#optional)
-  - [Models](#models)
-  - [Controllers](#controllers)
+- [Rails Generate](#rails-generate)
 - [Command Line](#command-line)
 
 ---
