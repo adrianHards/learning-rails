@@ -99,6 +99,8 @@ end
 `rails db:seed`
 * undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
 `rails db:rollback`
+* delete a migration file, for example, if you make a typo and haven't migrated yet <br>
+`rails d migration SameMigrationNameAsUsedToGenerate`
 
 #### Models
 `rails g model Doctor first_name last_name speciality:text patient:has_many`<br>
