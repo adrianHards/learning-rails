@@ -35,7 +35,7 @@ Run `rails new -h` to view all the options you can pass to `rails new`. For prac
 
 ### Optional
 
-1. Add any gems you want to include in your <strong>Gemfile</strong>. For example, I like to add `gem "responders"` for [respond_with](https://github.com/heartcombo/responders).
+1. Add any gems you want to include in your <strong>Gemfile</strong>. For example, I like to add `gem "responders"` for [respond_with](https://github.com/heartcombo/responders) which allows you to do [this](/tasks_controller.rb).
 2. Run `bundle install` to install any additional gems now included in your Gemfile. For responders, you also need to run:
 ```
 bundle install
