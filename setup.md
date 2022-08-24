@@ -91,10 +91,11 @@ end
 `rails db:create`
 * update the schema: <br>
 `rails db:migrate`
-* drop the database, create it again and run all the migrations: <br>
-`rails db:migrate:reset`
+* drop the database, create it again and re-seed: <br>
+`rails db:reset`
 * load data from the file: db/seeds.rb into the database <br>
 `rails db:seed`
+* 
 * undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
 `rails db:rollback`
 * delete a migration file, for example, if you make a typo and haven't migrated yet <br>
