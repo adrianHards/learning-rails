@@ -95,7 +95,6 @@ end
 `rails db:reset`
 * load data from the file: db/seeds.rb into the database <br>
 `rails db:seed`
-* 
 * undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
 `rails db:rollback`
 * delete a migration file, for example, if you make a typo and haven't migrated yet <br>
