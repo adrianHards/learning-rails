@@ -10,12 +10,13 @@
 Run `rails new -h` to view all the options you can pass to `rails new`. For practice apps I've settled with:
 <br>
 
-```rails new myapp -c tailwind -j esbuild -d postgresql -T```
+```rails new myapp -c tailwind -j esbuild -d postgresql -T -M```
 <br>
 <br>
 
 * `rails new myapp` creates a new rails application called myapp. If you want use multiple words, the convention is `my_app`
 * `-T` skips setting up of tests (so that we can use rspec over the default minitest)
+* `-M` skips [Action Mailer](https://guides.rubyonrails.org/action_mailer_basics.html)
 * `-j esbuild` sets the JavaScript build tool to [esbuild](https://esbuild.github.io/)
 * `-c tailwind` sets the CSS framework to [Tailwind](https://tailwindcss.com/docs/guides/ruby-on-rails)
 * `-d postgresql` sets Postgres as the database
