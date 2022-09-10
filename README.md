@@ -8,6 +8,7 @@
 ### Ruby on Rails
 
 * [Rails Setup](/setup.md)
+* [RSpec](/rspec.md)
 * ~~[Rails API Setup with React](/react.md)~~
 * ~~[Routes](/routes.md)~~
 * ~~[Models](/models.md)~~
