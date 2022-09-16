@@ -1,3 +1,4 @@
+```
 import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="geolocation"
@@ -41,3 +42,4 @@ export default class extends Controller {
     @restaurant = Restaurant.new(restaurant_params)
     key = ENV['GOOGLE_MAPS_API_KEY']
     id_url = URI("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=#{@restaurant.name}&inputtype=textquery&locationbias=point:#{@lat}%2C#{@lng}&fields=place_id&key=#{key}")
+```
