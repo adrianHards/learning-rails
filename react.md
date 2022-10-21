@@ -7,7 +7,7 @@ There are two ways to use React with Ruby on Rails (RoR). The first is to build 
 
 ## Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
 ```
-rails new backend-app --api -T
+rails new backend-app --api -T -d postgresql
 cd backend-app
 ```
 * `--api` inherits ApplicationController from ActionController::API instead of ActionController::Base (thus omitting views, helpers, and assets)
