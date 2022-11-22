@@ -1,5 +1,6 @@
 - [Best Practices](#best-practices)
 - [Typical Workflow](#typical-workflow)
+- [Pull Requests](#pull-requests)
 - [I Need To](#i-need-to)
   - [Create A Branch](#create-a-branch)
   - [Go Back To Main](#go-back-to-main)
@@ -18,8 +19,15 @@
 <p align="center"><a href="#top">⬆</a></p>
 
 ---
+
+### Typical Workflow
+
+<p align="center"><a href="#top">⬆</a></p>
+
+---
+
 ### I Need To
-The following will assume you have modified your `.gitconfig` file to include the [following](https://github.com/ssaunier/dotfiles/blob/master/gitconfig)
+The following will assume you have modified your `.gitconfig` file to include the [following](https://github.com/ssaunier/dotfiles/blob/master/gitconfig) <br><br>
 
 #### Create A Branch
 `git branch name-of-branch` or <br>
@@ -32,5 +40,3 @@ The following will assume you have modified your `.gitconfig` file to include th
 `git sweep`
 
 <p align="center"><a href="#top">⬆</a></p>
-
-#### Clean Up My Branches
