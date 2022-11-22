@@ -1,6 +1,7 @@
 - [Best Practices](#best-practices)
 - [Typical Workflow](#typical-workflow)
 - [Pull Requests](#pull-requests)
+- [Merge Conflicts](#merge-conflicts)
 - [I Need To](#i-need-to)
   - [Create A Branch](#create-a-branch)
   - [Go Back To Main](#go-back-to-main)
@@ -31,8 +32,14 @@
 
 ### Pull Requests
 
-1. 
-2. that
+<p align="center"><a href="#top">⬆</a></p>
+
+---
+
+
+### Merge Conflicts
+
+Source control
 
 <p align="center"><a href="#top">⬆</a></p>
 
