@@ -5,6 +5,15 @@
   - [Create A Branch](#create-a-branch)
   - [Go Back To Main](#go-back-to-main)
   - [Clean Up Merged Branches](#clean-up-merged-branches)
+  - [Git Status, yellow x]
+  - [Add]
+  - [Commit]
+  - [Unstage]
+  - [Pull Master]
+  - [Push Branch]
+  - [Merge Master]
+  - [Fetch remote]
+  - [Remote]
 
 ---
 
@@ -20,14 +29,17 @@
 
 ---
 
-### Typical Workflow
+### Pull Requests
+
+1. 
+2. that
 
 <p align="center"><a href="#top">⬆</a></p>
 
 ---
 
 ### I Need To
-The following will assume you have modified your `.gitconfig` file (found in your root `cd ~` `ls -a`) to include the [following](https://github.com/ssaunier/dotfiles/blob/master/gitconfig) <br><br>
+Some of following will assume you have modified your `.gitconfig` file (found in your root `cd ~` `ls -a`) to include the [following](https://github.com/ssaunier/dotfiles/blob/master/gitconfig) <br><br>
 
 #### Create A Branch
 `git branch name-of-branch` or <br>
