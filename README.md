@@ -9,6 +9,7 @@
 
 * [Rails Setup](/setup.md)
 * [RSpec](/rspec.md)
+* [GitHub](/github.md)
 * ~~[AJAX](/ajax.md)~~
 * ~~[Rails API Setup with React](/react.md)~~
 * ~~[Routes](/routes.md)~~
