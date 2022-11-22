@@ -27,7 +27,7 @@
 ---
 
 ### I Need To
-The following will assume you have modified your `.gitconfig` file to include the [following](https://github.com/ssaunier/dotfiles/blob/master/gitconfig) <br><br>
+The following will assume you have modified your `.gitconfig` file (found in your root `cd ~` `ls -a`) to include the [following](https://github.com/ssaunier/dotfiles/blob/master/gitconfig) <br><br>
 
 #### Create A Branch
 `git branch name-of-branch` or <br>
