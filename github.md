@@ -3,6 +3,7 @@
 - [Pull Requests](#pull-requests)
 - [Merge Conflicts](#merge-conflicts)
 - [I Need To](#i-need-to)
+- Git Commit Conventions
   - [Create A Branch](#create-a-branch)
   - [Go Back To Main](#go-back-to-main)
   - [Clean Up Merged Branches](#clean-up-merged-branches)
@@ -94,3 +95,22 @@ Some of following will assume you have modified your `.gitconfig` file (found in
 `git sweep`
 
 <p align="center"><a href="#top">⬆</a></p>
+
+The following isn’t complete, but a good starting point on how to work together:
+update your local main
+git pull origin main
+make a new branch named after the feature you’re about to work on
+git checkout -b new-branch
+commit early and often! It’s easier to rollback to an earlier commit
+git add .
+git commit -m
+check git status
+git status
+update your branch with latest main. Alternatively checkout your main branch, update it there, go back to your new branch and merge with your local main
+git pull origin main
+resolve conflicts with main using Source Control in VSCode
+once resolved, make a new PR
+git push origin new-branch
+go to GitHub and make a new PR. Talk to each other about what you did. Have someone else read through your code and approve your PR. Merge your own PR once approved
+go back to main and merge latest changes
+update Heroku after a PR has been merged!
