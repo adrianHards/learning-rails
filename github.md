@@ -26,6 +26,33 @@
 
 ### Typical Workflow
 
+```
+# update your local main
+git pull origin main
+
+# make a new branch named after the feature you're about to work on
+git checkout -b new-branch
+
+# commit early and often! It's easier to rollback to an earlier commit
+git add .
+git commit -m 
+
+# git reset or revert?
+
+# check git status
+git status
+
+# [new-branch] git pull origin main
+
+# git checkout main
+
+# [main] git pull origin main
+
+# git checkout new-branch
+
+# git merge main
+```
+
 <p align="center"><a href="#top">⬆</a></p>
 
 ---
