@@ -44,6 +44,14 @@ git status
 
 # [new-branch] git pull origin main
 
+# resolve conflicts with main
+
+# git push origin new-branch
+
+# go to github and make a new PR
+
+# review each other's code; leave comments
+
 # git checkout main
 
 # [main] git pull origin main
