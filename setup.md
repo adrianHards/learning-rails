@@ -2,6 +2,7 @@
 - [Optional](#optional)
 - [Rails Generate](#rails-generate)
 - [Command Line](#command-line)
+- [Heroku](#heroku)
 
 ---
 
@@ -93,13 +94,15 @@ end
 * update the schema: <br>
 `rails db:migrate`
 * drop the database, create it again and re-seed: <br>
-`rails db:reset`
+`rails db:reset` <br>
+`rails db:drop` to drop the db only
 * load data from the file: db/seeds.rb into the database <br>
 `rails db:seed`
 * undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
 `rails db:rollback`
 * delete a migration file, for example, if you make a typo and haven't migrated yet <br>
 `rails d migration SameMigrationNameAsUsedToGenerate`
+* if you've truly messed things up (e.g. deleted a migration file by accident), simply delete **schema.db** and re-run `rails db:migrate`
 
 #### Models
 `rails g model Doctor first_name last_name speciality:text patient:has_many`<br>
@@ -123,6 +126,32 @@ end
 * `bin/rails console` start rails console
 * `bin/rails routes | grep doctor` only shows us the routes for doctors
 
+<p align="center"><a href="#top">⬆</a></p>
 
+---
+
+### [Heroku](https://devcenter.heroku.com/articles/getting-started-with-rails7)
+
+- Log in to Heroku <br>
+`heroku login` <br>
+- Open current app in default browser <br>
+`heroku open` <br>
+- Launch Rails console <br>
+`heroku run rails console` <br>
+- see live stream of app's logs <br>
+`heroku logs --tail` <br>
+- delete database <br>
+`heroku pg:reset DATABASE --confirm APP-NAME` or <br>
+`heroku restart; heroku pg:reset DATABASE --confirm APP-NAME; heroku run rake db:setup` <br>
+- recreate database and run migrations <br>
+`heroku run rake db:migrate` <br>
+- populate database with seed <br>
+`heroku run rake db:seed` <br>
+- to combine previous two steps: <br>
+`heroku run rake db:setup` <br>
+- list previous versions of your app <br>
+`heroku releases`
+- rollback to X version <br>
+`heroku rollback [RELEASE #]`
 
 <p align="center"><a href="https://github.com/adrianHards/rails-templates">Home</a></p>
