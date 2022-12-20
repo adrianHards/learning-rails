@@ -7,7 +7,7 @@
 
 ### Ruby on Rails
 
-* [Rails Setup](/setup.md)
+* [Rails 101](/setup.md)
 * [RSpec](/rspec.md)
 * [GitHub](/github.md)
 * ~~[AJAX](/ajax.md)~~
