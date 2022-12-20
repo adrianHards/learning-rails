@@ -8,7 +8,7 @@
 ### Ruby on Rails
 
 * [Rails 101](/setup.md)
-* [RSpec](/rspec.md)
+* ~~[RSpec](/rspec.md)~~
 * [GitHub](/github.md)
 * ~~[AJAX](/ajax.md)~~
 * ~~[Rails API Setup with React](/react.md)~~
