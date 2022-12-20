@@ -151,7 +151,7 @@ end
 `heroku run rake db:setup` <br>
 - list previous versions of your app <br>
 `heroku releases`
-- rollback to X version <br>
+- rollback to # version <br>
 `heroku rollback [RELEASE #]`
 
 <p align="center"><a href="https://github.com/adrianHards/rails-templates">Home</a></p>
