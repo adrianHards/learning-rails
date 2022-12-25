@@ -97,7 +97,7 @@ Some of following will assume you have modified your `.gitconfig` file (found in
 <p align="center"><a href="#top">⬆</a></p>
 
 The following isn’t complete, but a good starting point on how to work together:
-update your local main
+* update your local main
 git pull origin main
 make a new branch named after the feature you’re about to work on
 git checkout -b new-branch
