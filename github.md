@@ -8,6 +8,8 @@
   - [Go Back To Main](#go-back-to-main)
   - [Clean Up Merged Branches](#clean-up-merged-branches)
   - [Git Status, yellow x]
+  - Git rebase
+  - Git squash
   - [Add]
   - [Commit]
   - [Unstage]
