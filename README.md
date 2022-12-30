@@ -8,14 +8,17 @@
 ### Ruby on Rails
 
 * [Rails 101](/setup.md)
-* ~~[RSpec](/rspec.md)~~
-* [GitHub](/github.md)
-* ~~[AJAX](/ajax.md)~~
-* ~~[Rails API Setup with React](/react.md)~~
+* ~~[Rails as an API](/react.md)~~
 * ~~[Routes](/routes.md)~~
 * ~~[Models](/models.md)~~
 * ~~[Controllers](/controllers.md)~~
 * ~~[Views](views.md)~~
+* ~~[RSpec](/rspec.md)~~
+* ~~[AJAX](/ajax.md)~~
+
+### Other
+* ~~[GitHub](/github.md)~~
+* ~~[VSCode](/vscode.md)~~
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
