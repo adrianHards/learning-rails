@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-#### Configuration
+#### Optimised for
 <strong>Rails</strong>: 7.1.0.alpha <br>
 <strong>Ruby</strong>: 3.1.2p20
 <br>
