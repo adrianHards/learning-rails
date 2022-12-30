@@ -1,19 +1,7 @@
-#### Why should I read this?
-
 There are many different ways of writing code that achieve the same goal. However, most programmers agree there are some ways of writing code that are more readable than others. To help write more understandable code, programmers follow style guides. These provide guidelines for how to write code, structure it and avoid common problems.
 
-#### This style guide is not complete
-
-But it doesn’t need to be. If there’s anything you’d like to add, please do so! Just remember there’s little point adding all the rules our linters already cover. If you’re looking for a more detailed style guide, please visit the ones listed below. And If there’s a linter, formatter or library you’d like to add, please make sure it’s _still in use and updated frequently_.
-
-* * *
-
-#### Table of Contents
-
-/\*<!\[CDATA\[\*/ div.rbtoc1672404885942 {padding: 0px;} div.rbtoc1672404885942 ul {list-style: circle;margin-left: 0px;} div.rbtoc1672404885942 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
-
-*   [For you to install](#CodeStyleGuide-Foryoutoinstall)
-    *   [Rubocop Installation (already added)](#CodeStyleGuide-RubocopInstallation(alreadyadded))
+*   To install
+    *   [Rubocop Installation](#rubocop-installation)
     *   [ESLint with Standard and Prettier (already added)](#CodeStyleGuide-ESLintwithStandardandPrettier(alreadyadded))
     *   [VSCode](#CodeStyleGuide-VSCode)
 *   [Complete Style Guides](#CodeStyleGuide-CompleteStyleGuides)
@@ -52,11 +40,11 @@ But it doesn’t need to be. If there’s anything you’d like to add, please d
 For you to install
 ------------------
 
-### Rubocop Installation (already added)
+### Rubocop Installation
 
 [Documentation](https://docs.rubocop.org/rubocop/index.html)
 
-- [x] only one person needs to complete the following setup at the start of a project
+- [ ] only one person needs to complete the following setup at the start of a project
 - [ ] once pushed to GitHub, everyone else just needs to run bundle install
 - [ ] install each of the VS Code extensions list below
 - [ ] visit your VS Code settings and complete the [following](https://github.com/testdouble/standard/wiki/IDE:-vscode).
@@ -65,7 +53,6 @@ For you to install
 
 *   From your terminal, `cd` to the project’s root and:
     
-
 ```java
 group :development, :test do
   gem "standard", require: false
