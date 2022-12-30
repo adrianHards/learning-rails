@@ -17,8 +17,10 @@
 * ~~[AJAX](/ajax.md)~~
 
 ### Other
+* [Command Line](/command.md)
 * ~~[GitHub](/github.md)~~
 * [VSCode](/vscode.md)
+
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
