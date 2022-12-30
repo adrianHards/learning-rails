@@ -14,7 +14,7 @@
 * ~~[Controllers](/controllers.md)~~
 * ~~[Views](views.md)~~
 * ~~[RSpec](/rspec.md)~~
-* [Style Guide](/style.md)
+* ~~[Style Guide](/style.md)~~
 * ~~[AJAX](/ajax.md)~~
 
 ### Other
