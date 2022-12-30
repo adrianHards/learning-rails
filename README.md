@@ -18,7 +18,7 @@
 
 ### Other
 * ~~[GitHub](/github.md)~~
-* ~~[VSCode](/vscode.md)~~
+* [VSCode](/vscode.md)
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
