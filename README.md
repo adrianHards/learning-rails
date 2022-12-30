@@ -17,8 +17,8 @@
 * ~~[AJAX](/ajax.md)~~
 
 ### Other
-* [Command Line](/command.md)
 * ~~[GitHub](/github.md)~~
+* [Other](/other.md)
 * [VSCode](/vscode.md)
 
 
