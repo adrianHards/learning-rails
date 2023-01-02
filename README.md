@@ -1,27 +1,28 @@
 <div id="top"></div>
 
 #### Optimised for
+
 <strong>Rails</strong>: 7.1.0.alpha <br>
 <strong>Ruby</strong>: 3.1.2p20
 <br>
 
 ### Ruby on Rails
 
-* [Setup](/setup.md)
-* ~~[Rails as an API](/react.md)~~
-* ~~[Routes](/routes.md)~~
-* ~~[Models](/models.md)~~
-* ~~[Controllers](/controllers.md)~~
-* ~~[Views](views.md)~~
-* ~~[RSpec](/rspec.md)~~
-* ~~[Style Guide](/style.md)~~
-* ~~[AJAX](/ajax.md)~~
+- [Setup](/setup.md)
+- ~~[Rails as an API](/react.md)~~
+- ~~[Routes](/routes.md)~~
+- ~~[Models](/models.md)~~
+- ~~[Controllers](/controllers.md)~~
+- ~~[Views](views.md)~~
+- ~~[RSpec](/rspec.md)~~
+- ~~[Style Guide](/style.md)~~
+- ~~[AJAX](/ajax.md)~~
 
 ### Other
-* ~~[GitHub](/github.md)~~
-* [Other](/other.md)
-* [VSCode](/vscode.md)
 
+- ~~[GitHub](/github.md)~~
+- [Other](/other.md)
+- [VSCode](/vscode.md)
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
