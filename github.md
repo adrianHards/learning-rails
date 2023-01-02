@@ -13,6 +13,8 @@
 [difftool "code"]
   cmd = code --wait --diff $LOCAL $REMOTE
 ```
+see logs of the specific branch you're in <br>
+`git cherry -v main`
 
 
 #### Git Workflow
