@@ -9,5 +9,3 @@
 
 #### Squash
 [how to squash](https://www.git-tower.com/learn/git/faq/git-squash) <br>
-
-Test
