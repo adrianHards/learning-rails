@@ -4,6 +4,7 @@
 
 #### Rebase
 
+[git rabse vs git merge](https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase/16666418#16666418)
 [git pull vs git pull --rebase](https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase) <br>
 [don't use git pull](https://longair.net/blog/2009/04/16/git-fetch-and-merge/) <br>
 [best practice](https://sdq.kastel.kit.edu/wiki/Git_pull_--rebase_vs._--merge) <br>
