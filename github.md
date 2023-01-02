@@ -5,6 +5,7 @@
 
 #### Rebase
 
+[git rebase main](https://riptutorial.com/git/example/1211/local-branch-rebasing)
 [git rebase vs git merge](https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase/16666418#16666418) <br>
 [git rebase or git merge, kraken](https://www.gitkraken.com/learn/git/problems/git-rebase-vs-merge)
 [git pull vs git pull --rebase](https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase) <br>
