@@ -1,4 +1,4 @@
-#### mergetool and difftool
+#### Using VSCode to merge and see diff
 `code ~/.gitconfig`
 ```c#
 [merge]
