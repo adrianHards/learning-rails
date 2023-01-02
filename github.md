@@ -19,6 +19,8 @@
   - [Fetch remote]
   - [Remote]
 
+# git reset or revert?
+
 ---
 
 ### Best Practices
@@ -29,25 +31,23 @@
 
 ### Typical Workflow
 
-```
-# update your local main
-git pull origin main
+1. update your local main <br>
+`git pull origin main`
 
-# make a new branch named after the feature you're about to work on
-git checkout -b new-branch
+2. make a new branch named after the feature you're working on <br>
+`git checkout -b new-branch`
 
-# commit early and often! It's easier to rollback to an earlier commit
-git add .
-git commit -m 
+3. commit early and often! It's easier to rollback to an earlier commit <br>
+`git add .` <br>
+`git commit -m`
 
-# git reset or revert?
+4. check git status <br>
+`git status`
 
-# check git status
-git status
+5. we can either `git push origin new-branch` or from the new-branch directory, `git pull origin main` <br>
 
-# [new-branch] git pull origin main
+6. our new-branch may have conflicts with main which we must now resolve. 
 
-# resolve conflicts with main
 
 # git push origin new-branch
 
@@ -62,7 +62,7 @@ git status
 # git checkout new-branch
 
 # git merge main
-```
+
 
 <p align="center"><a href="#top">⬆</a></p>
 
