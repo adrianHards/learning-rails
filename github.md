@@ -1,10 +1,12 @@
 #### Git Workflow
 
 [Workflow](https://www.doabledanny.com/git-workflows)
+[Git hygiene](https://betterprogramming.pub/six-rules-for-good-git-hygiene-5006cf9e9e2)
 
 #### Rebase
 
 [git rebase vs git merge](https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase/16666418#16666418) <br>
+[git rebase or git merge, kraken](https://www.gitkraken.com/learn/git/problems/git-rebase-vs-merge)
 [git pull vs git pull --rebase](https://stackoverflow.com/questions/18930527/difference-between-git-pull-and-git-pull-rebase) <br>
 [don't use git pull](https://longair.net/blog/2009/04/16/git-fetch-and-merge/) <br>
 [best practice](https://sdq.kastel.kit.edu/wiki/Git_pull_--rebase_vs._--merge) <br>
