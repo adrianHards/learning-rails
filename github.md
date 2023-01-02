@@ -1,3 +1,20 @@
+#### mergetool and difftool
+`code ~/.gitconfig`
+```c#
+[merge]
+  tool = code
+[mergetool "code"]
+  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+[mergetool]
+  keepBackup = false
+
+[diff]
+  tool = code
+[difftool "code"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+```
+
+
 #### Git Workflow
 
 [Workflow](https://www.doabledanny.com/git-workflows)
