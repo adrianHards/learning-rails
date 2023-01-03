@@ -1,6 +1,7 @@
 ### Using VSCode to resolve conflicts and see differences
 
-As of June 2022, VSCode gives us access to a [merge editor](https://code.visualstudio.com/updates/v1_69#_3-way-merge-editor). Alternatively, we can run something similar from our terminal. First `code ~/.gitconfig` add the following:
+As of June 2022, VSCode gives us access to a [merge editor](https://code.visualstudio.com/updates/v1_69#_3-way-merge-editor). <br>
+Alternatively, we can run something similar from our terminal. First `code ~/.gitconfig` add the following:
 
 ```c#
 [merge]
