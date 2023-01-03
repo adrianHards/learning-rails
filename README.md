@@ -20,8 +20,7 @@
 
 ### Other
 
-- ~~[GitHub](/github.md)~~
-- [Other](/other.md)
+- [GitHub](/github.md)
 - [VSCode](/vscode.md)
 
 <p align="center">
