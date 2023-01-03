@@ -23,6 +23,7 @@ now, whenever you run `mergetool` or `difftool` from your terminal, you can reso
 
 - to see only the logs of the specific branch you're in <br>
   `git cherry -v main`
+- `git pull --rebase origin main`
 
 #### Git Workflow
 
