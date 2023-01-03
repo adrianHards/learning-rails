@@ -1,5 +1,7 @@
-#### Using VSCode to merge and see differences
-`code ~/.gitconfig`
+### Using VSCode to resolve conflicts and see differences
+
+As of June 2022, VSCode gives us access to a [merge editor](https://code.visualstudio.com/updates/v1_69#_3-way-merge-editor). Alternatively, we can run something similar from our terminal. First `code ~/.gitconfig` add the following:
+
 ```c#
 [merge]
   tool = code
@@ -13,9 +15,14 @@
 [difftool "code"]
   cmd = code --wait --diff $LOCAL $REMOTE
 ```
-see logs of the specific branch you're in <br>
-`git cherry -v main`
 
+now, whenever you run `mergetool` or `difftool` from your terminal, you can resolve conflicts or see differences between files in VSCode, respectively.
+<br>
+
+#### Other useful commands:
+
+to see only the logs of the specific branch you're in <br>
+`git cherry -v main`
 
 #### Git Workflow
 
