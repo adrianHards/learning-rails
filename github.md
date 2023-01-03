@@ -41,5 +41,5 @@ now, whenever you run `mergetool` or `difftool` from your terminal, you can reso
 
 #### Squash
 
-- 💜 [What is the difference between merge --squash and rebase?](https://stackoverflow.com/questions/2427238/what-is-the-difference-between-merge-squash-and-rebase)
+- 💜 [Stack: What is the difference between merge --squash and rebase?](https://stackoverflow.com/questions/2427238/what-is-the-difference-between-merge-squash-and-rebase)
 - [How to squash your commits](https://www.git-tower.com/learn/git/faq/git-squash) <br>
