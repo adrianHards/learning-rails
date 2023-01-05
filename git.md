@@ -31,3 +31,7 @@ if the terminal asks you to enter a message:
 `git cherry -v main` to see logs of branch you're in
 `git lg` to see single 
 <br><br>
+
+#### RSpec
+`bundle exec rspec spec/models/filename_spec.rb` to run a specific file
+<br><br>
