@@ -12,8 +12,18 @@ if the terminal asks you to enter a message:
 <br><br>
 
 #### git branch
+`git checkout branch-name` to switch to a local branch
 `git checkout -b name-of-branch` create new branch and immediately check into it <br>
 `git branch -m new-branch-name` change name of current branch
+`git branch` to see all local branches
+`git branch -r` to see all remote branches
+`git branch -a` to see both local and remote branches
+`git branch -d branch-name` to delete a local branch
+
+##### switch to a remote branch
+1. `git pull`
+2. `git checkout --track origin/branch-name`
+
 <br><br>
 #### git reset
 1. create a branch and backup your work before `git checkout main`
