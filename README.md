@@ -9,6 +9,7 @@
 ### Ruby on Rails
 
 - [Setup](/setup.md)
+- [Common Bugs](/bugs.md)
 <!-- - ~~[Rails as an API](/react.md)~~
 - ~~[Routes](/routes.md)~~
 - ~~[Models](/models.md)~~
