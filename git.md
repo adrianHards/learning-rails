@@ -1,3 +1,6 @@
+#### git workflow
+[see](https://www.doabledanny.com/git-workflows)
+
 #### git branch
 `git branch -m new-branch-name` change name of current branch
 <br><br>
