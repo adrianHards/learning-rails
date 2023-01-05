@@ -1,7 +1,14 @@
+#### git merge
+if the terminal asks you to enter a message:
+1. press `i` for insert
+2. write your merge message
+3. `esc` to escape
+4. type `:wq` to write & quit
+5. hit `enter`
+<br><br>
 #### git workflow
 [see](https://www.doabledanny.com/git-workflows)
 <br><br>
-
 #### git branch
 `git checkout -b name-of-branch` create new branch and immediately check into it <br>
 `git branch -m new-branch-name` change name of current branch
