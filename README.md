@@ -20,7 +20,8 @@
 
 ### Other
 
-- [GitHub](/github.md)
+- [git](/git.md)
+- [gitconfig](/gitconfig.md)
 - [VSCode](/vscode.md)
 
 <p align="center">
