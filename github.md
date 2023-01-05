@@ -1,3 +1,7 @@
+##### remove local untracked files
+see which files will be deleted `git clean -n` <br>
+delete files `git clean -f` <br>
+
 ### Using VSCode to resolve conflicts and see differences
 
 As of June 2022, VSCode gives us access to a [merge editor](https://code.visualstudio.com/updates/v1_69#_3-way-merge-editor). <br>
