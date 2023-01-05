@@ -1,6 +1,6 @@
 ##### remove local untracked files
-see which files will be deleted `git clean -n` <br>
-delete files `git clean -f` <br>
+`git clean -n` to see which files will be deleted  <br>
+`git clean -f` to delete files  <br>
 
 ### Using VSCode to resolve conflicts and see differences
 
