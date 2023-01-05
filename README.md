@@ -17,8 +17,7 @@
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
 - ~~[AJAX](/ajax.md)~~ -->
-
-<br><br>
+<br>
 ### Other
 
 #### Git
