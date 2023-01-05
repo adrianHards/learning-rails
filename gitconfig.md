@@ -1,5 +1,5 @@
 #### Le Wagon config
-[See](https://github.com/lewagon/dotfiles/blob/master/gitconfig) for custom terminal commands, such as `git lg` and `git sweep`
+`code ~ /.gitconfig` and [modify](https://github.com/lewagon/dotfiles/blob/master/gitconfig) for custom terminal commands, such as `git lg` and `git sweep`
 <br><br>
 
 #### Using VSCode to resolve conflicts and see differences
