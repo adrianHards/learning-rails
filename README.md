@@ -25,7 +25,7 @@
 - [git concepts](/concepts.md)
 - [gitconfig](/gitconfig.md)
 #### VSCode
-- [VSCode settings](/vscode.md)
+- [VSCode shortcuts](/vscode.md)
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
