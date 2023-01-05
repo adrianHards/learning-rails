@@ -20,7 +20,8 @@
 
 ### Other
 
-- [git](/git.md)
+- [git commands](/git.md)
+- [git concepts](/concepts.md)
 - [gitconfig](/gitconfig.md)
 - [VSCode](/vscode.md)
 
