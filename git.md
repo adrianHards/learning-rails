@@ -14,6 +14,7 @@
 <br><br>
 #### git log
 `git cherry -v main` to see logs of branch you're in
+`git lg` to see single 
 <br><br>
 
 ### References
