@@ -1,3 +1,6 @@
+#### git branch
+`git branch -m new-branch-name` change name of current branch
+<br><br>
 #### git reset
 1. `git fetch origin`
 2. `git reset --hard origin/main` to reset the local main branch to the remote repository
