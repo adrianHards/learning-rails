@@ -3,6 +3,7 @@
 <br><br>
 
 #### git branch
+`git checkout -b name-of-branch` create new branch and immediately check into it
 `git branch -m new-branch-name` change name of current branch
 <br><br>
 #### git reset
