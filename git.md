@@ -49,5 +49,6 @@ resetting your local main to remote <br>
 <br><br>
 
 #### RSpec
-`bundle exec rspec spec/models/filename_spec.rb` to run a specific file
+`bundle exec rspec spec/models/filename_spec.rb` to run a specific file <br>
+note, `bundle exec` will run specific versions of Ruby and gems that are specified in your application's Gemfile
 <br><br>
