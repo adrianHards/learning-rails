@@ -10,10 +10,11 @@
 
 - [Setup](/setup.md)
 - [Common Bugs](/bugs.md)
+- [Controllers](/controllers.md)
 <!-- - ~~[Rails as an API](/react.md)~~
 - ~~[Routes](/routes.md)~~
 - ~~[Models](/models.md)~~
-- [Controllers](/controllers.md)
+
 - ~~[Views](views.md)~~
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
