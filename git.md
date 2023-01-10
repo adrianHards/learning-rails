@@ -31,6 +31,7 @@ if the terminal asks you to enter a message:
 
 <br><br>
 #### git reset
+resetting your local main to remote <br>
 1. create a branch and backup your work before `git checkout main`
 2. `git fetch origin`
 3. `git reset --hard origin/main` to reset the local main branch to the remote repository
