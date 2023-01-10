@@ -19,7 +19,6 @@
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
 - ~~[AJAX](/ajax.md)~~ -->
-<br>
 
 ### Other
 
