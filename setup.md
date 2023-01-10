@@ -64,19 +64,19 @@ config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/builds")
 ---
 
 ### Rails Generate
-`rails g <name of generator> <options>` <br><br>
+`bin/rails g <name of generator> <options>` <br><br>
 Additional options include: [--no-helper](https://www.rubyguides.com/2020/01/rails-helpers/) and `--no-test-framework`
 <br><br>
 
 <strong>Undo</strong>:
-* `rails d controller name <actions>`
-* `rails d model name`
+* `bin/rails d controller name <actions>`
+* `bin/rails d model name`
 
 #### Migrations
 ```
-rails g migration add_name_to_doctors name:string
-rails g migration remove_name_from_doctors name:string
-rails g migration add_doctor_to_patients doctor:references
+bin/rails g migration add_name_to_doctors name:string
+bin/rails g migration remove_name_from_doctors name:string
+bin/rails g migration add_doctor_to_patients doctor:references
 ```
 
 The first command will create a migration file e.g. `20200928055457_add_name_to_doctors.rb` that contains:
@@ -90,22 +90,22 @@ end
 ```
 
 * create an empty database for you: <br>
-`rails db:create`
+`bin/rails db:create`
 * update the schema: <br>
-`rails db:migrate`
+`bin/rails db:migrate`
 * drop the database, create it again and re-seed: <br>
-`rails db:reset` <br>
-`rails db:drop` to drop the db only
+`bin/rails db:reset` <br>
+`bin/rails db:drop` to drop the db only
 * load data from the file: db/seeds.rb into the database <br>
-`rails db:seed`
+`bin/rails db:seed`
 * undoes the last migration, you can then edit the file, and run rails db:migrate again <br>
-`rails db:rollback`
+`bin/rails db:rollback`
 * delete a migration file, for example, if you make a typo and haven't migrated yet <br>
-`rails d migration SameMigrationNameAsUsedToGenerate`
+`bin/rails d migration SameMigrationNameAsUsedToGenerate`
 * if you've truly messed things up (e.g. deleted a migration file by accident), simply delete **schema.db** and re-run `rails db:migrate`
 
 #### Models
-`rails g model Doctor first_name last_name speciality:text patient:has_many`<br>
+`bin/rails g model Doctor first_name last_name speciality:text patient:has_many`<br>
 * a database migration that will add a table and add the columns first_name, last_name, and speciality.
 * a model file that will inherit from ApplicationRecord
 * if the data type is a string, you don’t need to specify their type.
@@ -113,7 +113,7 @@ end
 
 #### Controllers
 
-`rails g controller Doctors index save`
+`bin/rails g controller Doctors index save`
 * provide a controller file and corresponding views folder
 * populate controller file with e.g. `def index end` and `index.html.erb` files inside of corresponding views folder
 
@@ -123,6 +123,7 @@ end
 
 ### [Command Line](https://guides.rubyonrails.org/command_line.html)
 
+* `bin/setup` executes setup script placed in the bin directory; add e.g. `bin/rails db:setup` for a consistent setup
 * `bin/rails console` start rails console
 * `bin/rails routes | grep doctor` only shows us the routes for doctors
 
