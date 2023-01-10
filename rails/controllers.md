@@ -1,6 +1,6 @@
 # Controllers
 
-#### .new or .build
+#### .new or [.build](https://apidock.com/rails/v5.2.3/ActiveRecord/Associations/CollectionProxy/build)
 
 In Ruby on Rails, the `.new` method is used to create a new instance of a model, while the `.build` method is used to create a new instance of a model that is part of an existing association. The difference between the two is subtle, but important to understand.
 
