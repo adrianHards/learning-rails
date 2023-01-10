@@ -2,6 +2,11 @@
 💖 [see](https://www.doabledanny.com/git-workflows)
 <br><br>
 
+#### git commit
+##### [git revert or git reset](https://www.freecodecamp.org/news/git-revert-commit-how-to-undo-the-last-commit/)
+`git reset --soft HEAD~1` if commit exists only on local; will re-write commit history! <br>
+`git revert <commit to revert>` if commit exists remotely; use `git lg` to find commit you want to revert to <br>
+
 #### git merge
 if the terminal asks you to enter a message:
 1. press `i` for insert
