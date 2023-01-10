@@ -10,7 +10,7 @@
 
 - [Setup](/setup.md)
 - [Common Bugs](/bugs.md)
-- [Controllers](/controllers.md)
+- [Controllers](/rails/controllers.md)
 <!-- - ~~[Rails as an API](/react.md)~~
 - ~~[Routes](/routes.md)~~
 - ~~[Models](/models.md)~~
