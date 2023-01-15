@@ -25,12 +25,12 @@ if the terminal asks you to enter a message:
 `git branch -a` to see both local and remote branches <br>
 `git branch -d branch-name` to delete a local branch <br>
 
-#### git checkout
-`git checkout --patch main` checkout specific hunks or lines from a file in the "main" branch from current branch
-
 ##### switch to a remote branch
 1. `git pull`
 2. `git checkout --track origin/branch-name`
+
+#### git checkout
+`git checkout --patch main` checkout specific hunks or lines from a file in the "main" branch from current branch
 
 <br><br>
 #### git reset
