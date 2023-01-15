@@ -25,6 +25,9 @@ if the terminal asks you to enter a message:
 `git branch -a` to see both local and remote branches <br>
 `git branch -d branch-name` to delete a local branch <br>
 
+#### git checkout
+`git checkout --patch main` checkout specific hunks or lines from a file in the "main" branch from current branch
+
 ##### switch to a remote branch
 1. `git pull`
 2. `git checkout --track origin/branch-name`
@@ -39,6 +42,7 @@ resetting your local main to remote <br>
 5. `git clean -xdf` `-x` removes ignored files, `-d` removes untracked folders, `-f` removes untracked files
 <br><br>
 #### git diff
+`git diff branch1..branch2` see all differences between two branches <br>
 `git difftool` to see differences in VSCode (assuming you have it set up in `code ~/.gitconfig`)
 <br><br>
 #### git status
