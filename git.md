@@ -30,7 +30,7 @@ if the terminal asks you to enter a message:
 2. `git checkout --track origin/branch-name`
 
 #### git checkout
-`git checkout --patch main` checkout specific hunks or lines from a file in the "main" branch from current branch
+`git checkout --patch main` checkout specific hunks or lines from a file in the "main" branch from branch you're in
 
 <br><br>
 #### git reset
