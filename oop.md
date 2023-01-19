@@ -16,4 +16,19 @@ anonymous functions that can be passed into methods code that you put inside the
 ### yield
 calls the code inside the block and runs it
 
+```ruby
+
+def iterate(array)
+  for element in array
+    yield(element)
+  end
+end
+
+numbers = [1, 2, 3]
+
+iterate(numbers) do |num|
+  puts num
+end
+```
+
 **its value**: yield is commonly used to implement reusable code patterns. For example, a method might define the basic structure of an iteration but the specific actions to be performed on each iteration are passed as a block to the method.
