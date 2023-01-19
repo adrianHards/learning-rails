@@ -14,5 +14,6 @@ anonymous functions that can be passed into methods code that you put inside the
 ```
 
 ### yield
+calls the code inside the block and runs it
 
 **its value**: yield is commonly used to implement reusable code patterns. For example, a method might define the basic structure of an iteration but the specific actions to be performed on each iteration are passed as a block to the method.
