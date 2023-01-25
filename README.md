@@ -6,12 +6,7 @@
 <strong>Ruby</strong>: 3.1.2p20
 <br>
 
-### Ruby
-- [Methods](/ruby/methods.md)
-- [OOP](/ruby/oop.md)
-- [Operators](/ruby/operators.md)
-
-### Ruby on Rails
+# Ruby on Rails
 
 - [Setup](/setup.md)
 - [Controllers](/rails/controllers.md)
@@ -23,6 +18,15 @@
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
 - ~~[AJAX](/ajax.md)~~ -->
+
+## Incomplete
+
+### Ruby
+- [Methods](/ruby/methods.md)
+- [OOP](/ruby/oop.md)
+- [Operators](/ruby/operators.md)
+
+
 
 ### Installation
 - [common errors](/bugs.md)
