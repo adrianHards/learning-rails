@@ -11,7 +11,7 @@
 - Zoom in          `⌘ +` 
 - Zoom out         `⌘ -`
 - Zoom 100%        `⌘ + 0`
-- Toggle grid      `⌃ + G`
+- Toggle grid      `⇧ + G`
 - Group Selection  `⌘ + G`
 - Big Nudge        `⇧ + direction`
 - Duplicate        `Option + drag`
@@ -19,6 +19,9 @@
 
 ### Additional Shortcuts
 - [Figma shortcuts](https://shortcuts.design/toolspage-figma.html)
+
+### Padding and Spacing
+
 
 
 ## Learn about layout and the 8pt grid system
