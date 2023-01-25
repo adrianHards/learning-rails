@@ -6,6 +6,9 @@
 <strong>Ruby</strong>: 3.1.2p20
 <br>
 
+### Installation
+- [common errors](/bugs.md)
+
 ### Ruby
 - [Methods](/ruby/methods.md)
 - [Operators](/ruby/operators.md)
