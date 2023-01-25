@@ -8,6 +8,7 @@
 
 ### Ruby
 - [Methods](/ruby/methods.md)
+- [OOP](/ruby/oop.md)
 - [Operators](/ruby/operators.md)
 
 ### Ruby on Rails
