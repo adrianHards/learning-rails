@@ -21,6 +21,9 @@
 
 ### Other
 
+#### Figma
+- [basics](/figma.md)
+
 #### Git
 - [git commands](/git.md)
 - [git concepts](/concepts.md)
