@@ -28,15 +28,15 @@
 #### Ruby Methods
 
 #### Figma
-- [basics](/figma.md)
+- [basics](/other/figma.md)
 
 #### Git
-- [git commands](/git.md)
-- [git concepts](/concepts.md)
-- [gitconfig](/gitconfig.md)
+- [git commands](/other/git.md)
+- [git concepts](/other/concepts.md)
+- [gitconfig](/other/gitconfig.md)
 
 #### VSCode
-- [VSCode shortcuts](/vscode.md)
+- [VSCode shortcuts](/other/vscode.md)
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
