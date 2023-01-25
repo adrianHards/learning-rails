@@ -1,36 +1,23 @@
-# Figma-tips-for-UI-design
+# Figma-tips
 
-## Learn the most common shortcuts
+## Common shortcuts
 
-Rectangle tool   `R` 
+- Frame             `F` or `A`
+- Rectangle         `R` 
+- Circle            `O`
+- Text              `T`
+- Move tool        `V`
+- Type tool        `T` 
+- Zoom in          `⌘ +` 
+- Zoom out         `⌘ -`
+- Zoom 100%        `⌘ + 0`
+- Toggle grid      `⌃ + G`
+- Group Selection  `⌘ + G`
+- Big Nudge        `⇧ + direction`
+- Duplicate        `Option + drag`
+- Show/hide tool panel  `⌘ + .`
 
-Move tool        `V`
-
-Type tool        `T` 
-
-Ellipse tool     `O`
-
-Frame tool       `F`
-
-Zoom in          `⌘ +` 
-
-Zoom out         `⌘ -`
-
-Zoom 100%        `⌘ + 0`
-
-Toggle grid      `⌃ + G`
-
-Group Selection  `⌘ + G`
-
-Big Nudge        `⇧ + direction`
-
-Duplicate        `Option + drag`
-
-Show/hide tool panel  `⌘ + .`
-
-
-
-## Shortcut resources
+### Additional Shortcuts
 - [Figma shortcuts](https://shortcuts.design/toolspage-figma.html)
 
 
