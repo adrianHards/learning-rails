@@ -17,6 +17,7 @@
 - Big Nudge        `⇧ + direction`
 - Duplicate        `Option + drag`
 - Show/hide tool panel  `⌘ + .`
+- Show outlines only `⇧ + O`
 
 ### Additional Shortcuts
 - [Figma shortcuts](https://shortcuts.design/toolspage-figma.html)
