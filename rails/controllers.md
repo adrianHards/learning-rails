@@ -15,6 +15,7 @@ On the other hand, `.build` is typically used when you have an existing instance
 For example, if you have an existing user object, you can use .build to create a new post object that is associated with that user.
 
 ```ruby
+user = User.new(name: 'John', email: 'john@example.com')
 post = user.posts.build(title: 'Hello World', body: 'This is my first post')
 ```
 This will create a new instance of the Post model, with the title attribute set to 'Hello World' and the body attribute set to 'This is my first post', and it will also associate the post with the user by adding the user_id to the post's attributes.
