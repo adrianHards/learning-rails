@@ -7,7 +7,7 @@
 <br>
 
 ### Ruby
-- Methods
+- [Methods](/ruby/methods.md)
 - [Operators](/ruby/operators.md)
 
 ### Ruby on Rails
@@ -24,10 +24,6 @@
 - ~~[AJAX](/ajax.md)~~ -->
 
 ### Other
-
-#### Ruby Methods
-- [Methods](/ruby/methods.md)
-- [Operators](/ruby/operators.md)
 
 #### Figma
 - [basics](/other/figma.md)
