@@ -10,6 +10,7 @@
 - Type tool        `T` 
 - Zoom in          `⌘ +` 
 - Zoom out         `⌘ -`
+- Shrink            `K`
 - Zoom 100%        `⌘ + 0`
 - Toggle grid      `⇧ + G`
 - Group Selection  `⌘ + G`
