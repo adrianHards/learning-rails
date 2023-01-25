@@ -6,6 +6,10 @@
 <strong>Ruby</strong>: 3.1.2p20
 <br>
 
+### Ruby
+- Methods
+- [Operators](/ruby/operators.md)
+
 ### Ruby on Rails
 
 - [Setup](/setup.md)
@@ -21,6 +25,8 @@
 
 ### Other
 
+#### Ruby Methods
+
 #### Figma
 - [basics](/figma.md)
 
@@ -28,6 +34,7 @@
 - [git commands](/git.md)
 - [git concepts](/concepts.md)
 - [gitconfig](/gitconfig.md)
+
 #### VSCode
 - [VSCode shortcuts](/vscode.md)
 
