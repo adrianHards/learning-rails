@@ -93,7 +93,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 end
 ```
 
-## Step 4 Change your port
+## Step 4 Change your default port in development
 
 Let's change the default port for Rails so it doesn't conflict with React (which we'll allow to occupy 3000).
 
