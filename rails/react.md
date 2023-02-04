@@ -45,6 +45,7 @@ Run `bin/rails s` to start the server.
 ### Step 2.1 Seed the database
 
 ```
+# db/seeds.rb
 puts "destroying all movies"
 
 Movie.destroy_all
