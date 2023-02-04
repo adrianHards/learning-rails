@@ -82,7 +82,7 @@ end
 
 Run `bin/rails s` to start the server and visit http://localhost:3000/movies; you should see JSON (in this instance, an array of each of our movie instances).
 
-## Step 3 Setup CORS
+## Step 3. Setup CORS
 
 CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented by web browsers that restricts the ability of a web page to make requests to a domain different to the one that served the web page (in our case, localhost:3000 vs 3001). This is done to prevent malicious websites from making unauthorized requests to other domains, which could result in the theft of sensitive data or other security risks.
 
@@ -100,7 +100,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 end
 ```
 
-## Step 4 Change your default port in development
+## Step 4. Change your default port in development
 
 Let's change the default port for Rails so it doesn't conflict with React (which we'll allow to occupy 3000).
 
@@ -113,14 +113,14 @@ port ENV.fetch("PORT", 3001)
 
 # React
 
-## Step 5 create-react-app
+## Step 5. create-react-app
 
 ```
 npx create-react-app react-frontend
 cd react-frontend
 ```
 
-## Step 6 Fetch data
+## Step 6. Fetch data
 
 ```
 # src/App.js
