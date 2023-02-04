@@ -137,7 +137,7 @@ function App() {
 
   return (
     <ul>
-      {movies.map(item => (
+      {movies.map(movie => (
         <li key={movie.id}>
           {movie.title}: {movie.description}
         </li>
@@ -176,7 +176,7 @@ function App() {
   return (
     <ul>
       {movies.map(movie => (
-        <li key={item.id}>
+        <li key={movie.id}>
           {movie.title}: {movie.description}
         </li>
       ))}
