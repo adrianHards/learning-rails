@@ -142,11 +142,11 @@ function App() {
 export default App;
 ```
 
-Restart both the Rails and React servers, each in a different terminal session:
+Restart both the Rails and React servers, each in a different terminal session starting with Rails:
 
 ```
-npm start
 bin/rails s
+npm start
 ```
 
 And we're done! Check http://localhost:3000/ to see a list of your movies!
