@@ -28,6 +28,26 @@ rails g resource movie title:string description:text
   3. a `Movie controller` in app/controllers/movies_controller.rb;
   4. all CRUD actions in config/routes.rb
 
+```
+invoke  active_record
+create  db/migrate/20230204163820_create_movies.rb
+create  app/models/movie.rb
+invoke  test_unit
+create  test/models/movie_test.rb
+create  test/fixtures/movies.yml
+invoke  controller
+create  app/controllers/movies_controller.rb
+invoke  test_unit
+create  test/controllers/movies_controller_test.rb
+invoke  resource_route
+route   resources :movies
+```
+
+```
+rails db:create
+rails db:migrate
+```
+
 <!--
 ### 1.1 Setup CORS <br>
 Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. We can implement this with the gem [rack cors](https://github.com/cyu/rack-cors). Run the following to add it to the gemfile:  <br><br>
