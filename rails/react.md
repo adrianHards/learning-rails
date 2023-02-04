@@ -23,7 +23,6 @@ cd rails-backend
 
 ```
 bin/rails g resource movie title:string description:text
-
 bin/rails db:create
 bin/rails db:migrate
 ```
