@@ -17,10 +17,10 @@ cd rails-backend
 ## Step 2. Create a resource
 
 ```
-rails g resource movie title:string description:text
+bin/rails g resource movie title:string description:text
 
-rails db:create
-rails db:migrate
+bin/rails db:create
+bin/rails db:migrate
 ```
 
 This will generate:
@@ -62,7 +62,7 @@ puts "created #{Movie.all.count} movies"
 ```
 
 ```
-rails db:seed
+bin/rails db:seed
 ```
 
 ### Step 2.2 Setup the controller
@@ -79,8 +79,7 @@ Run `bin/rails s` to start the server and visit http://localhost:3000/movies; yo
 
 ## Step 3 Setup CORS
 
-Add `gem 'rack-cors'` to your gemfile
-Run `bundle install`
+Add `gem 'rack-cors'` to your gemfile then run `bin/bundle install`
 
 `touch config/initializers/cors.rb` and add the following:
 
@@ -107,4 +106,47 @@ port ENV.fetch("PORT", 3001)
 
 # React
 
-## Step 5
+## Step 5 create-react-app
+
+```
+npx create-react-app react-frontend
+cd react-frontend
+```
+
+## Step 6 Fetch data
+
+```
+# src/App.js
+import React, { useState, useEffect } from 'react';
+
+function App() {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/movies')
+      .then(response => response.json())
+      .then(data => setMovies(data));
+  }, []);
+
+  return (
+    <ul>
+      {movies.map(item => (
+        <li key={item.id}>
+          {item.title}: {item.description}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default App;
+```
+
+Restart both the Rails and React servers, each in a different terminal session:
+
+```
+npm start
+bin/rails s
+```
+
+And we're done! Check http://localhost:3000/ to see a list of your movies!
