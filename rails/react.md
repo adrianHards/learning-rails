@@ -47,7 +47,7 @@ route   resources :movies
 
 ### Step 2.1 Seed the database
 
-```
+```ruby
 # db/seeds.rb
 puts "destroying all movies"
 
@@ -72,7 +72,7 @@ bin/rails db:seed
 
 ### Step 2.2 Setup the controller
 
-```
+```ruby
 # controllers/movies_controller.rb
 def index
   @movies = Movie.all
@@ -90,7 +90,7 @@ Add `gem 'rack-cors'` to your gemfile then run `bin/bundle install`
 
 `touch config/initializers/cors.rb` and add the following:
 
-```
+```ruby
 # initializers/cors.rb
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
@@ -106,7 +106,7 @@ Let's change the default port for Rails so it doesn't conflict with React (which
 
 By specifying a different port, we can run multiple web applications on the same device, each accessible via a unique port number. For example, we will have a Rails API running on port 3001 and a React front-end running on port 3000. We'll then configure the front-end to communicate with the API by sending requests to http://localhost:3001.
 
-```
+```ruby
 # config/puma.rb
 port ENV.fetch("PORT", 3001)
 ```
@@ -122,7 +122,7 @@ cd react-frontend
 
 ## Step 6. Fetch data
 
-```
+```js
 # src/App.js
 import React, { useState, useEffect } from 'react';
 
@@ -138,8 +138,8 @@ function App() {
   return (
     <ul>
       {movies.map(item => (
-        <li key={item.id}>
-          {item.title}: {item.description}
+        <li key={movie.id}>
+          {movie.title}: {movie.description}
         </li>
       ))}
     </ul>
@@ -157,3 +157,32 @@ npm start
 ```
 
 And we're done! Check http://localhost:3000/ to see a list of all your movies!
+
+## Axios
+
+```js
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+function App() {
+  const [movies, setMovies] = useState([]);
+  
+  useEffect(() => {
+    axios
+      .get('http://localhost:3000/movies')
+      .then(response => setMovies(response.data));
+   }, []);
+
+  return (
+    <ul>
+      {movies.map(movie => (
+        <li key={item.id}>
+          {movie.title}: {movie.description}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default App;
+```
