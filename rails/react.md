@@ -1,11 +1,9 @@
-# Incomplete
+Here, we're going to create two repositories. One for the backend, which we'll create with Rails, and another for the frontend, which will create with React.
+<br> <br>
 
-We are going to create two repositories. One for the backend, which we'll create with Rails, and another for the frontend, which will create with React.
-<br>
+# Basic Setup (no CORS)
 
----
-
-### Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
+## Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
 
 ```
 rails new rails-backend --api -d postgresql
@@ -16,7 +14,7 @@ cd rails-backend
 
 <br>
 
-### Step 2. Create a resource
+## Step 2. Create a resource
 
 ```
 rails g resource movie title:string description:text
@@ -43,6 +41,30 @@ route   resources :movies
 ```
 
 Run `bin/rails s` to start the server.
+
+### Step 2.1 Seed the database
+
+```
+puts "destroying all movies"
+
+Movie.destroy_all
+
+puts "there are #{Movie.all.count} movies"
+
+puts "creating 3 movies"
+
+increment = 1
+3.times do
+  Movie.create(title: "Movie #{increment}", description: "Description of movie #{increment}")
+  increment += 1
+end
+
+puts "created #{Movie.all.count} movies"
+```
+
+```
+rails db:seed
+```
 
 <!--
 ### 1.1 Setup CORS <br>
