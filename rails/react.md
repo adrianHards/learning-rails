@@ -1,19 +1,34 @@
 # Incomplete
 
-There are two ways to use React with Ruby on Rails (RoR). The first is to build two standalone apps, with the React app on a different repository, communicating with the backend via an API. This can be achieved with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and the Rails CLI. The other is by having both apps in one repository, running side by side. Here, I'll be doing the former. 
+There are two ways to use React with Ruby on Rails (RoR). The first is to build two standalone apps, with the React app on a different repository, communicating with the backend via an API. This can be achieved with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and the Rails CLI. The other is by having both apps in one repository, running side by side. Here, I'll be doing the former.
 <br>
 
 ---
 
-## Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
+### Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
+
 ```
-rails new backend-app --api -T -d postgresql
-cd backend-app
+rails new rails-backend --api -d postgresql
+cd rails-backend
 ```
-* `--api` inherits ApplicationController from ActionController::API instead of ActionController::Base (thus omitting views, helpers, and assets)
-* `-T` skips the generation of Minitest::Unit files and folders.
-<br> <br>
-<!-- 
+
+- `--api` inherits ApplicationController from ActionController::API instead of ActionController::Base (thus omitting views, helpers, and assets)
+
+<br>
+
+### Step 2. Create a resource
+
+```
+rails g resource item name:string description:text
+```
+
+- This will generate:
+  1. a `migration` to create a table for items in db/migrate/\_create_items.rb;
+  2. an `Item model` in app/models/item.rb;
+  3. a `Item controller` in app/controllers/users_controller.rb;
+  4. `resources :items` in config/routes.rb
+
+<!--
 ### 1.1 Setup CORS <br>
 Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. We can implement this with the gem [rack cors](https://github.com/cyu/rack-cors). Run the following to add it to the gemfile:  <br><br>
 `gem 'rack-cors'` <br><br>
@@ -36,7 +51,7 @@ To be continued <br>
 ...
  -->
 
-<!-- 
+<!--
 https://www.section.io/engineering-education/how-to-integrate-a-react-application-with-rails-api/
 
 https://www.youtube.com/watch?v=sh4WrNGDvQM
