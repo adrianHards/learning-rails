@@ -1,7 +1,9 @@
 Here, we're going to create two repositories. One for the backend, which we'll create with Rails, and another for the frontend, which will create with React.
 <br> <br>
 
-# Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
+# Rails
+
+## Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
 
 ```
 rails new rails-backend --api -d postgresql
@@ -12,7 +14,7 @@ cd rails-backend
 
 <br>
 
-# Step 2. Create a resource
+## Step 2. Create a resource
 
 ```
 rails g resource movie title:string description:text
@@ -92,4 +94,17 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 end
 ```
 
-M
+## Step 4 Change your port
+
+Let's change the default port for Rails so it doesn't conflict with React (which we'll allow to occupy 3000).
+
+By specifying a different port, we can run multiple web applications on the same device, each accessible via a unique port number. For example, we will have a Rails API running on port 3001 and a React front-end running on port 3000. We'll then configure the front-end to communicate with the API by sending requests to http://localhost:3001.
+
+```
+# config/puma.rb
+port ENV.fetch("PORT", 3001)
+```
+
+# React
+
+## Step 5
