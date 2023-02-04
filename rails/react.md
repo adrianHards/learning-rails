@@ -1,9 +1,7 @@
 Here, we're going to create two repositories. One for the backend, which we'll create with Rails, and another for the frontend, which will create with React.
 <br> <br>
 
-# Basic Setup (no CORS)
-
-## Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
+# Step 1. Creating the [Rails API](https://guides.rubyonrails.org/api_app.html) <br>
 
 ```
 rails new rails-backend --api -d postgresql
@@ -14,7 +12,7 @@ cd rails-backend
 
 <br>
 
-## Step 2. Create a resource
+# Step 2. Create a resource
 
 ```
 rails g resource movie title:string description:text
