@@ -1,14 +1,8 @@
-### Rails Backend API:
+# Rails as a Backend API
 
-Rails will serve as the backend/server-side component of our application. The backend will handle the data storage and retrieval, processing, and other logic for our application.
-
-### React Frontend:
-
-React will serve as the frontend/client-side component of our application. The frontend will handle the user interface, interaction, and display of data for our application.
+**Rails** will serve as the backend/server-side component of our application. The backend will handle the data storage and retrieval, processing, and other logic for our application. **React** will serve as the frontend/client-side component of our application. The frontend will handle the user interface, interaction, and display of data for our application.
 
 To allow the frontend and backend components to communicate and exchange data, we will be using an API (Application Programming Interface). An API is a set of rules and protocols that define how the frontend and backend components will interact with each other. The frontend will send HTTP requests to the backend, and the backend will respond with the requested data. 
-
-In summary, we are setting up a full-stack web application using Rails as the backend and React as the frontend, communicating with each other via an API.
 
 <br>
 
@@ -162,4 +156,4 @@ bin/rails s
 npm start
 ```
 
-And we're done! Check http://localhost:3000/ to see a list of your movies!
+And we're done! Check http://localhost:3000/ to see a list of all your movies!
