@@ -1,6 +1,6 @@
 # Incomplete
 
-There are two ways to use React with Ruby on Rails (RoR). The first is to build two standalone apps, with the React app on a different repository, communicating with the backend via an API. This can be achieved with [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and the Rails CLI. The other is by having both apps in one repository, running side by side. Here, I'll be doing the former.
+We are going to create two repositories. One for the backend, which will be created with Rails, and another for the frontend, which will created with React.
 <br>
 
 ---
@@ -19,14 +19,14 @@ cd rails-backend
 ### Step 2. Create a resource
 
 ```
-rails g resource item name:string description:text
+rails g resource movie title:string description:text
 ```
 
 - This will generate:
-  1. a `migration` to create a table for items in db/migrate/\_create_items.rb;
-  2. an `Item model` in app/models/item.rb;
-  3. a `Item controller` in app/controllers/users_controller.rb;
-  4. `resources :items` in config/routes.rb
+  1. a `migration` to create a table for movies in db/migrate/\_create_movies.rb;
+  2. an `Movie model` in app/models/movie.rb;
+  3. a `Movie controller` in app/controllers/movies_controller.rb;
+  4. all CRUD actions in config/routes.rb
 
 <!--
 ### 1.1 Setup CORS <br>
