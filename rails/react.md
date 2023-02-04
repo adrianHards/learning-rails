@@ -79,6 +79,8 @@ Run `bin/rails s` to start the server and visit http://localhost:3000/movies; yo
 
 ## Step 3 Setup CORS
 
+CORS stands for Cross-Origin Resource Sharing. It is a security feature implemented by web browsers that restricts the ability of a web page to make requests to a domain different to the one that served the web page (in our case, localhost:3000 vs 3001). This is done to prevent malicious websites from making unauthorized requests to other domains, which could result in the theft of sensitive data or other security risks.
+
 Add `gem 'rack-cors'` to your gemfile then run `bin/bundle install`
 
 `touch config/initializers/cors.rb` and add the following:
