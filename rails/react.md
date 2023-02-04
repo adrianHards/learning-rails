@@ -130,7 +130,7 @@ function App() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('http://localhost:3001/movies')
       .then(response => response.json())
       .then(data => setMovies(data));
   }, []);
@@ -169,7 +169,7 @@ function App() {
   
   useEffect(() => {
     axios
-      .get('http://localhost:3000/movies')
+      .get('http://localhost:3001/movies')
       .then(response => setMovies(response.data));
    }, []);
 
