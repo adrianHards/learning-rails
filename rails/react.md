@@ -1,6 +1,6 @@
 # Incomplete
 
-We are going to create two repositories. One for the backend, which will be created with Rails, and another for the frontend, which will created with React.
+We are going to create two repositories. One for the backend, which we'll create with Rails, and another for the frontend, which will create with React.
 <br>
 
 ---
@@ -20,13 +20,12 @@ cd rails-backend
 
 ```
 rails g resource movie title:string description:text
+
+rails db:create
+rails db:migrate
 ```
 
-- This will generate:
-  1. a `migration` to create a table for movies in db/migrate/\_create_movies.rb;
-  2. an `Movie model` in app/models/movie.rb;
-  3. a `Movie controller` in app/controllers/movies_controller.rb;
-  4. all CRUD actions in config/routes.rb
+This will generate:
 
 ```
 invoke  active_record
@@ -43,10 +42,7 @@ invoke  resource_route
 route   resources :movies
 ```
 
-```
-rails db:create
-rails db:migrate
-```
+Run `bin/rails s` to start the server.
 
 <!--
 ### 1.1 Setup CORS <br>
