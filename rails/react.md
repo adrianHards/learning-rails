@@ -38,8 +38,6 @@ invoke  resource_route
 route   resources :movies
 ```
 
-Run `bin/rails s` to start the server.
-
 ### Step 2.1 Seed the database
 
 ```
@@ -65,37 +63,33 @@ puts "created #{Movie.all.count} movies"
 rails db:seed
 ```
 
-<!--
-### 1.1 Setup CORS <br>
-Very simply, cross origin resource sharing [(CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) defines who’s allowed to interact with our API. We can implement this with the gem [rack cors](https://github.com/cyu/rack-cors). Run the following to add it to the gemfile:  <br><br>
-`gem 'rack-cors'` <br><br>
-Then <br><br>
-`bundle` <br>
+### Step 2.2 Setup the controller
 
-And finally update `config/initializers/cors.rbz` to allow all origins (*) to make requests (for testing purposes only)
 ```
+# controllers/movies_controller.rb
+def index
+  @movies = Movie.all
+  render json: @movies
+end
+```
+
+Run `bin/rails s` to start the server and visit http://localhost:3000/movies; you should see JSON (in this instance, an array of each of our movie instances).
+
+## Step 3 Setup CORS
+
+Add `gem 'rack-cors'` to your gemfile
+Run `bundle install`
+
+`touch config/initializers/cors.rb` and add the following:
+
+```
+# initializers/cors.rb
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*'
-resource '*',
-      headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+    origins 'http://localhost:3001'
+    resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
 end
 ```
-... <br>
-To be continued <br>
-...
- -->
 
-<!--
-https://www.section.io/engineering-education/how-to-integrate-a-react-application-with-rails-api/
-
-https://www.youtube.com/watch?v=sh4WrNGDvQM
-
-https://blog.devgenius.io/create-a-rails-api-with-react-frontend-using-hooks-and-typescript-dcb4e84c3dbf
-
-https://blog.logrocket.com/getting-started-with-create-react-app-d93147444a27/
-
-https://hibbard.eu/rails-react-crud-app/
- -->
+M
