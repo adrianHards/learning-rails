@@ -96,7 +96,7 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
-    respond_with(@movies)
+    respond_with @movies
   end
 end
 ```
