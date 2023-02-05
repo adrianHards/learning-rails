@@ -10,7 +10,7 @@
 
 - [Setup](/setup.md)
 - [Controllers](/rails/controllers.md)
-<!-- - ~~[Rails as an API](/react.md)~~
+- [Rails as a backend API](/react.md)
 - ~~[Routes](/routes.md)~~
 - ~~[Models](/models.md)~~
 
@@ -25,13 +25,6 @@
 - [Methods](/ruby/methods.md)
 - [OOP](/ruby/oop.md)
 - [Operators](/ruby/operators.md)
-
-### Rails backend API
-- [React](/rails/react.md)
-
-
-### Installation
-- [common errors](/bugs.md)
 
 ### Other
 
