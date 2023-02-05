@@ -44,7 +44,17 @@ invoke  resource_route
 route   resources :movies
 ```
 
-### Step 2.1 Seed the database
+### Step 2.1 Setup the routes
+Without specifying the format, Rails will return data in the HTML format by default, so:
+```ruby
+#config/routes.rb
+Rails.application.routes.draw do
+  resources :movies, defaults: {format: :json}
+end
+
+```
+
+### Step 2.2 Seed the database
 
 ```ruby
 # db/seeds.rb
@@ -69,7 +79,7 @@ puts "created #{Movie.all.count} movies"
 bin/rails db:seed
 ```
 
-### Step 2.2 Setup the controller
+### Step 2.3 Setup the controller
 
 ```ruby
 def index
@@ -171,7 +181,7 @@ npm start
 
 And we're done! Check http://localhost:3000/ to see a list of all your movies!
 
-## Axios
+## Improved with Axios
 
 ```js
 import React, { useState, useEffect } from 'react';
@@ -179,12 +189,18 @@ import axios from 'axios';
 
 function App() {
   const [movies, setMovies] = useState([]);
-  
+
   useEffect(() => {
     axios
       .get('http://localhost:3001/movies')
-      .then(response => setMovies(response.data));
-   }, []);
+      .then(response => {
+        console.log(response.data);
+        setMovies(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <ul>
