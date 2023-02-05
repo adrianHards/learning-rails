@@ -20,6 +20,7 @@ cd rails-backend
 <br>
 
 ## Step 2. Create a resource
+Here, `rails g resource` generates a migration file, a model, a controller and the routes for the given class, but does not populate these files with anything else (unlike scaffold).  
 
 ```
 bin/rails g resource movie title:string description:text
@@ -101,7 +102,7 @@ class MoviesController < ApplicationController
 end
 ```
 
-Run `bin/rails s` to start the server and visit http://localhost:3000/movies; you should see JSON (in this instance, an array of each of our movie instances).
+Run `bin/rails s` to start the server and visit http://localhost:3000/movies; you should see JSON (in this example, an array of each of our movie instances).
 
 #### 
 
