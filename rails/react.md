@@ -72,26 +72,21 @@ bin/rails db:seed
 ### Step 2.2 Setup the controller
 
 ```ruby
-# controllers/movies_controller.rb
-class MoviesController < ApplicationController
-  respond_to :json
-
-  def index
-    @movies = Movie.all
-    respond_with @movies
-  end
+def index
+  @movies = Movie.all
+  render json: @movies
 end
 ```
-
-or
+Or add `gem 'responders'` to your Gemfile, run `bin/bundle install` and add:
 
 ```ruby
+# controllers/movies_controller.rb
 class MoviesController < ApplicationController
+  respond_to :json, :xml, :html
+
   def index
     @movies = Movie.all
-    respond_to do |format|
-      format.json { render json: @movies }
-    end
+    respond_with(@movies)
   end
 end
 ```
