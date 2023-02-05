@@ -11,9 +11,8 @@
 - [Setup](/setup.md)
 - [Controllers](/rails/controllers.md)
 - [Rails as a backend API](/react.md)
-- ~~[Routes](/routes.md)~~
+<!-- ~~[Routes](/routes.md)~~
 - ~~[Models](/models.md)~~
-
 - ~~[Views](views.md)~~
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
