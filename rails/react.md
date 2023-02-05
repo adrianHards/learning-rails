@@ -73,13 +73,32 @@ bin/rails db:seed
 
 ```ruby
 # controllers/movies_controller.rb
-def index
-  @movies = Movie.all
-  render json: @movies
+class MoviesController < ApplicationController
+  respond_to :json
+
+  def index
+    @movies = Movie.all
+    respond_with @movies
+  end
+end
+```
+
+or
+
+```ruby
+class MoviesController < ApplicationController
+  def index
+    @movies = Movie.all
+    respond_to do |format|
+      format.json { render json: @movies }
+    end
+  end
 end
 ```
 
 Run `bin/rails s` to start the server and visit http://localhost:3000/movies; you should see JSON (in this instance, an array of each of our movie instances).
+
+#### 
 
 ## Step 3. Setup CORS
 
