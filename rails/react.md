@@ -52,7 +52,12 @@ Without specifying the format, Rails will return data in the HTML format by defa
 Rails.application.routes.draw do
   resources :movies, defaults: {format: :json}
 end
-
+```
+or
+```ruby
+defaults format: :json do
+  resources :movies
+end
 ```
 
 ### Step 2.2 Seed the database
