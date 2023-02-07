@@ -9,7 +9,7 @@
 # Ruby on Rails
 
 - [Setup](/setup.md)
-- [Controllers](/rails/controllers.md)
+- ~~[Controllers](/rails/controllers.md)~~
 - [Rails as a backend API](/rails/react.md)
 <!-- ~~[Routes](/routes.md)~~
 - ~~[Models](/models.md)~~
@@ -21,9 +21,9 @@
 ## Incomplete
 
 ### Ruby
-- [Methods](/ruby/methods.md)
-- [OOP](/ruby/oop.md)
-- [Operators](/ruby/operators.md)
+- ~~[Methods](/ruby/methods.md)~~
+- ~~[OOP](/ruby/oop.md)~~
+- ~~[Operators](/ruby/operators.md)~~
 
 ### Other
 
