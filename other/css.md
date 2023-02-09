@@ -1,4 +1,5 @@
 ### [Naming conventions](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/)
+##### section
 > .stick-man <br>
 ##### components
 > .stick-man__head, .stick-man__arms <br>
