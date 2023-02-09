@@ -35,6 +35,9 @@
 - [git concepts](/other/concepts.md)
 - [gitconfig](/other/gitconfig.md)
 
+#### CSS
+- [CSS cheatsheet](/other/css.md)
+
 #### VSCode
 - [VSCode shortcuts](/other/vscode.md)
 
