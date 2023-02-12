@@ -30,6 +30,9 @@
 #### Figma
 - [basics](/other/figma.md)
 
+#### Terminal
+- [terminal commands](/other/terminal.md)
+
 #### Git
 - [git commands](/other/git.md)
 - [git concepts](/other/concepts.md)
