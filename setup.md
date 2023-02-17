@@ -72,6 +72,11 @@ Additional options include: [--no-helper](https://www.rubyguides.com/2020/01/rai
 * `bin/rails d controller name <actions>`
 * `bin/rails d model name`
 
+#### Resource
+`bin/rails g resource movie title:string description:text` <br>
+* generates a migration file, a model, a controller, views and the routes for the given class, but does not populate these files with anything else (unlike `scaffold`)
+
+
 #### Migrations
 ```
 bin/rails g migration add_name_to_doctors name:string
