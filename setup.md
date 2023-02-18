@@ -5,7 +5,7 @@
 - [Heroku](#heroku)
 
 ---
-
+You may want to run a few [updates](https://github.com/adrianHards/rails-guide/blob/main/other/terminal.md) before proceeding with a new project. <br>
 ### [Rails New](https://guides.rubyonrails.org/getting_started.html)
 
 Run `rails new -h` to view all the options you can pass to `rails new`. For practice apps I've settled with:
