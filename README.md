@@ -10,7 +10,7 @@
 
 - [Setup](/setup.md)
 - ~~[Seed](/rails/seed.md)~~
-- ~~[Models](/models.md)~~
+- ~~[Models](/rails/models.md)~~
 - [Rails as a backend API](/rails/react.md)
 <!-- ~~[Routes](/routes.md)~~
 - ~~[Views](views.md)~~
