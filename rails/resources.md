@@ -1,12 +1,12 @@
 #### Custom routes
-Use get method to define a route that maps the URL /contact to the contact action of the PagesController:
+Get method to define a route that maps the URL /contact to the contact action of the PagesController. `as:` creates a named route that you can use with a path helper. 
 ```ruby
-get 'contact', to: 'pages#contact'
+get 'contact', to: 'pages#contact' as: :contact_us
 ``` 
 
 ```ruby
 # erb
-<%= link_to 'Contact Us', contact_path %>
+<%= link_to 'Contact Us', contact_us_path %>
 ```
 
 #### Delete
