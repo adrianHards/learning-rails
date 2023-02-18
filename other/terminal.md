@@ -14,3 +14,8 @@
 `nvm use default` (switches to the default version of Node.js that you set with the previous command) <br>
 
 #### Gem
+`gem -v` <br>
+`gem update --system` <br>
+`gem list` <br>
+`gem outdated` <br>
+`gem update` <br>
