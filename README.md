@@ -10,9 +10,9 @@
 
 - [Setup](/setup.md)
 - ~~[Seed](/rails/seed.md)~~
+- ~~[Models](/models.md)~~
 - [Rails as a backend API](/rails/react.md)
 <!-- ~~[Routes](/routes.md)~~
-- ~~[Models](/models.md)~~
 - ~~[Views](views.md)~~
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
