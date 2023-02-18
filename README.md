@@ -17,6 +17,7 @@
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
 - ~~[AJAX](/ajax.md)~~ -->
+- ~~[Seed](/seed.md)~~ -->
 
 ## Incomplete
 
