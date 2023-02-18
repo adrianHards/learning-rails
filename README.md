@@ -9,7 +9,7 @@
 # Ruby on Rails
 
 - [Setup](/setup.md)
-- ~~[Controllers](/rails/controllers.md)~~
+- ~~[Seed](/rails/seed.md)~~
 - [Rails as a backend API](/rails/react.md)
 <!-- ~~[Routes](/routes.md)~~
 - ~~[Models](/models.md)~~
@@ -17,7 +17,7 @@
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
 - ~~[AJAX](/ajax.md)~~ -->
-- ~~[Seed](/seed.md)~~ -->
+
 
 ## Incomplete
 
