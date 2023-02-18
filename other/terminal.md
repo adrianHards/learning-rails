@@ -9,6 +9,7 @@
 `open <directory>` to open folder from terminal of target directory
 
 #### Node
+`nvm install --lts` (install the latest Long-Term Support (LTS) version of Node.js available through nvm) <br>
 `nvm install 16.15.1` (install a particular version of Node; nvm allows us install and switch between multiple versions of Node.js) <br>
 `nvm alias default 16.15.1` (set default version when you open a new terminal window) <br>
 `nvm use default` (switches to the default version of Node.js that you set with the previous command) <br>
