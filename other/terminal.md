@@ -14,8 +14,9 @@
 `nvm use default` (switches to the default version of Node.js that you set with the previous command) <br>
 
 #### Gem
-`gem -v` <br>
-`gem update --system` <br>
-`gem list` <br>
-`gem outdated` <br>
-`gem update` <br>
+`gem -v` (version of RubyGems that is currently installed) <br>
+`gem update --system` (updates RubyGems itself to the latest version available) <br>
+`gem list` (lists all of the gems that are currently installed on your system) <br>
+`gem outdated` (lists all of the gems that are currently installed on your system, but have a newer version available) <br>
+`gem update` (updates all of the gems that are currently installed on your system to their latest version) <br>
+`gem update <gemname>` (update a specific gem)
