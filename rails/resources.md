@@ -1,3 +1,9 @@
+#### Constraints
+Constraints are used to add conditions to a route that must be satisfied for the route to match a given request:
+```ruby
+resources :posts, only: [:index], constraints: { method: :get }
+```
+
 #### Custom routes
 Use get method to define a route that maps the URL /contact to the contact action of the PagesController:
 ```ruby
