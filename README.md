@@ -10,7 +10,7 @@
 
 - [Setup](/setup.md)
 - ~~[ruby/debug](rails/debug.md)~~
-- ~~[forms](rails/forms.md)~~
+- ~~[Forms](rails/forms.md)~~
 - ~~[Seed](/rails/seed.md)~~
 - ~~[Models](/rails/models.md)~~
 - ~~[Resources](/rails/resources.md)~~
