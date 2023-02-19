@@ -2,7 +2,7 @@
 
 **Rails** will serve as the backend/server-side component of our application. The backend will handle the data storage and retrieval, processing, and other logic for our application. **React** will serve as the frontend/client-side component of our application. The frontend will handle the user interface, interaction, and display of data for our application.
 
-To allow the frontend and backend components to communicate and exchange data, we will be using an API (Application Programming Interface). An API is a set of rules and protocols that define how the frontend and backend components will interact with each other. The frontend will send HTTP requests to the backend, and the backend will respond with the requested data. 
+To allow the frontend and backend components to communicate and exchange data, we will be using an API (Application Programming Interface). An API is a set of rules and protocols that define how the frontend and backend components will interact with each other. The frontend will send HTTP requests to the backend, and the backend will respond with the requested data. See [here](https://syllabus.codeyourfuture.io/js-core-3/week-2/lesson). 
 
 <br>
 
