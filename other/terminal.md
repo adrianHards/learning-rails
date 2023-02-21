@@ -23,6 +23,6 @@
 `gem update <gemname>` (update a specific gem)
 
 #### PID
-`lsof -i :3000` list all open connections on port 3000
-`lsof -i | grep ruby` list all open connections with string ruby
-`kill -9 <pid>` send the SIGKILL signal, which forces the process to terminate immediately (last resort)
+`lsof -i :3000` list all open connections on port 3000 <br>
+`lsof -i | grep ruby` list all open connections with string ruby <br>
+`kill -9 <pid>` send the SIGKILL signal, which forces the process to terminate immediately (last resort) <br>
