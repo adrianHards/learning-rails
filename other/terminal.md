@@ -21,3 +21,8 @@
 `gem outdated` (lists all of the gems that are currently installed on your system, but have a newer version available) <br>
 `gem update` (updates all of the gems that are currently installed on your system to their latest version) <br>
 `gem update <gemname>` (update a specific gem)
+
+#### PID
+`lsof -i :3000` list all open connections on port 3000
+`lsof -i | grep ruby` list all open connections with string ruby
+`kill -9 <pid>` send the SIGKILL signal, which forces the process to terminate immediately (last resort)
