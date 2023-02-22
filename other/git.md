@@ -45,6 +45,10 @@ If there are changes on main you don't want to bring over, then do the following
 1. `git pull`
 2. `git checkout --track origin/branch-name`
 
+##### setup remote connections
+`git remote -v` <br>
+`git remote add origin https://github.com/....git` <br>
+
 #### git checkout
 `git checkout --patch main` checkout specific hunks or lines from a file in the "main" branch from branch you're in
 
