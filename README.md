@@ -16,6 +16,7 @@
 - ~~[Resources](/rails/resources.md)~~
 - ~~[Routes](/rails/routes.md)~~
 - ~~[Seed](/rails/seed.md)~~
+- ~~[Simple Form](/rails/simple.md)~~
 <!-- ~~[Views](rails/views.md)~~
 - ~~[Forms](rails/forms.md)~~
 - ~~[RSpec](rails/rspec.md)~~
