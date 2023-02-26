@@ -14,13 +14,13 @@
 - ~~[Models](/rails/models.md)~~
 - Rails as a backend API](/rails/react.md)
 - ~~[Resources](/rails/resources.md)~~
-- ~~[Routes](/routes.md)~~
+- ~~[Routes](/rails/routes.md)~~
 - ~~[Seed](/rails/seed.md)~~
-<!-- ~~[Views](views.md)~~
+<!-- ~~[Views](rails/views.md)~~
 - ~~[Forms](rails/forms.md)~~
-- ~~[RSpec](/rspec.md)~~
-- ~~[Style Guide](/style.md)~~
-- ~~[AJAX](/ajax.md)~~ -->
+- ~~[RSpec](rails/rspec.md)~~
+- ~~[Style Guide](rails/style.md)~~
+- ~~[AJAX](rails/ajax.md)~~ -->
 
 
 ## Incomplete
