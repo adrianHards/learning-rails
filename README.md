@@ -9,6 +9,7 @@
 # Ruby on Rails
 
 - [Setup](/setup.md)
+- ~~[Devise](/devise.md)~~
 - ~~[ruby/debug](rails/debug.md)~~
 - ~~[Forms](rails/forms.md)~~
 - ~~[Seed](/rails/seed.md)~~
