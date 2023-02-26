@@ -1,11 +1,3 @@
-```ruby
-#%i[new create]
-resources :users, only: [:new, :create] do 
-  resources :posts, except: [:destroy]
-end
-resources :posts, only: [:destroy]
-```
-
 #### Member and Collection
 ```ruby
 resources :users do
@@ -25,6 +17,8 @@ The profile route is added to the member block, which means it operates on a sin
 ##### Collection
 The created_after route is added to the collection block, which means it operates on the entire collection of users. This route maps to the search action in the UsersController, and can be accessed via the URL /users/created_after. 
 
+<br>
+
 #### Custom route
 
 `get 'users/:id/bookings', to: 'users#bookings', as: 'user_bookings'` <br>
@@ -37,8 +31,17 @@ def bookings
   @bookings = @user.bookings
 end
 ```
+<br>
 
 #### Manually
+```ruby
+#%i[new create]
+resources :users, only: [:new, :create] do 
+  resources :posts, except: [:destroy]
+end
+resources :posts, only: [:destroy]
+```
+
 ```ruby
 # Users
 get    '/users/new',     to: 'users#new'
