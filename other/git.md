@@ -26,7 +26,7 @@ If there are changes on main you don't want to bring over, then do the following
 1. `git pull origin main`
 2. `git checkout -b resolve-conflict`
 3. `git merge pr-branch`
-4. resolve conflicts, `git add` and `git commit`
+4. resolve conflicts, `git add` and `git commit --no-edit` (commit using the default commit message)
 5. `git checkout pr-branch`
 6. `git merge resolve-conflict`
 
