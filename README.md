@@ -9,15 +9,15 @@
 # Ruby on Rails
 
 - [Setup](/setup.md)
-- [Devise](/rails/devise.md)
 - ~~[Debugging](rails/debug.md)~~
-- ~~[Forms](rails/forms.md)~~
-- ~~[Seed](/rails/seed.md)~~
+- [Devise](/rails/devise.md)
 - ~~[Models](/rails/models.md)~~
+- Rails as a backend API](/rails/react.md)
 - ~~[Resources](/rails/resources.md)~~
-- [Rails as a backend API](/rails/react.md)
-<!-- ~~[Routes](/routes.md)~~
-- ~~[Views](views.md)~~
+- ~~[Routes](/routes.md)~~
+- ~~[Seed](/rails/seed.md)~~
+<!-- ~~[Views](views.md)~~
+- ~~[Forms](rails/forms.md)~~
 - ~~[RSpec](/rspec.md)~~
 - ~~[Style Guide](/style.md)~~
 - ~~[AJAX](/ajax.md)~~ -->
