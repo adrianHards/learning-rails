@@ -12,7 +12,7 @@
 - ~~[Debugging](rails/debug.md)~~
 - [Devise](/rails/devise.md)
 - ~~[Models](/rails/models.md)~~
-- Rails as a backend API](/rails/react.md)
+- [Rails as a backend API](/rails/react.md)
 - ~~[Resources](/rails/resources.md)~~
 - ~~[Routes](/rails/routes.md)~~
 - ~~[Seed](/rails/seed.md)~~
