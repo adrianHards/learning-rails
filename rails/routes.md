@@ -37,9 +37,9 @@ end
 ```ruby
 #%i[new create]
 resources :users, only: [:new, :create] do 
-  resources :posts, except: [:destroy]
+  resources :posts, except: :destroy
 end
-resources :posts, only: [:destroy]
+resources :posts, only: :destroy
 ```
 
 ```ruby
