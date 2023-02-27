@@ -51,7 +51,7 @@ When a user submits their login credentials, Devise automatically routes the req
 
 `devise_for :users` in routes is doing the following:
 
-```ruby
+```
 new_user_session            GET           /users/sign_in                  devise/sessions#new
 user_session                POST          /users/sign_in                  devise/sessions#create
 destroy_user_session        DELETE        /users/sign_out                 devise/sessions#destroy
