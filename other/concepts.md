@@ -11,6 +11,10 @@
 ##### Check out your branch again and merge
 6. (master)     `git checkout my-feature`
 7. (my-feature) `git merge master`
+##### If there's a conflict
+8. open editor and resolve conflicts
+9. `git add .`                           
+10. `git commit --no-edit` # commit using the default commit message
 
 <br> 
 
