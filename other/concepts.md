@@ -1,3 +1,19 @@
+#### Pull Requests
+##### Commit your branch
+1. (my-feature) `git add .`
+2. (my-feature) `git commit -m 'add this feature'`
+3. (my-feature) `git status`
+
+##### Check out master and pull the latest version
+4. (my-feature) `git checkout master`
+5. (master)     `git pull origin master`
+
+##### Check out your branch again and merge
+6. (master)     `git checkout my-feature`
+7. (my-feature) `git merge master`
+
+<br> 
+
 #### Git Workflow
 - 💜 [Typical Workflow](https://www.doabledanny.com/git-workflows) <br>
 - [good habits when working in a team](https://betterprogramming.pub/six-rules-for-good-git-hygiene-5006cf9e9e2)
