@@ -44,3 +44,8 @@ def change
   rename_column :table_name, :old_column_name, :new_column_name
 end
 ```
+#### If all else fails ...
+1. delete your `schema.rb` file
+2. edit existing migration files as needed
+3. `rails db:drop`
+4. `rails db:create db:migrate`
