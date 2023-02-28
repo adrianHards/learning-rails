@@ -45,9 +45,9 @@ class ApplicationController < ActionController::Base
 end
 ```
 #### Routes
-With Devise, the sign_in action is not defined in the User controller. Instead, it is defined in the Devise SessionsController, which is automatically generated when you run the rails generate devise User command.
+With Devise, actions, such as sign_in action, are not defined in the User controller. Instead, it is defined in the Devise SessionsController, which is automatically generated when you run the rails generate devise User command.
 
-When a user submits their login credentials, Devise automatically routes the request to the appropriate controller action, which is defined in the config/routes.rb file. By default, the create action in the SessionsController handles the login logic.
+When a user submits their login credentials, Devise automatically routes the request to the appropriate controller action. By default, the create action in the SessionsController handles the login logic.
 
 `devise_for :users` in routes is doing the following:
 
