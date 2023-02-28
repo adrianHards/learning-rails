@@ -27,7 +27,7 @@ class PagesController < ApplicationController
 end
 ```
 #### adding additional attributes to User model
-1. Create a migration to add these columns in the users table.
+1. Create a migration to add the additional columns to the users table.
 2. Add new fields in Devise’s sign up and account update forms.
 3. Update the controller:
 ```ruby
