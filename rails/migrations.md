@@ -22,6 +22,14 @@ def change
   remove_column :table_name, :column_name
 end
 ```
+#### Add reference and foreign key
+`rails generate migration AddForeignKeyToPosts`
+```ruby
+def change
+  add_reference :reviews, :booking, null: false, foreign_key: true
+end
+```
+
 #### Add a foreign key
 `rails generate migration AddForeignKeyToPosts`
 ```ruby
