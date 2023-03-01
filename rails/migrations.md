@@ -12,7 +12,7 @@ end
 
 ```ruby
 def change
-  change_column :table_name, :column_name, :text
+  change_column :bookings, :content, :text
 end
 ```
 #### Remove a column
