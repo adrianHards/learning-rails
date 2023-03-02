@@ -2,22 +2,42 @@ Docs:
 > [Le Wagon](https://kitt.lewagon.com/camps/1108/lectures/05-Rails%2F09-Airbnb-SMTP#source) <br>
 > [pg_search](https://github.com/Casecommons/pg_search)
 
+#### Form
+
+```html.erb
+<%= form_with url: dogs_path, method: :get, class: "d-flex" do %>
+  <%= date_field_tag :start_date,
+    value: params[:start_date],
+    class: "form-control",
+    placeholder: "Start date"
+  %>
+  <%= date_field_tag :end_date,
+    value: params[:end_date],
+    class: "form-control",
+    placeholder: "End date"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+```
+
 #### SQL, page refresh:
 
 ```ruby
-def index
-  start_date = params[:start_date]
-  end_date = params[:end_date]
-
-  @apartments = Apartment.where(
-    "id NOT IN (
-      SELECT apartment_id
-      FROM bookings
-      WHERE start_date <= ? AND end_date >= ?
-    )",
-    end_date, start_date
-  )
-end
+  if params[:start_date].present?
+    start_date = params[:start_date].to_date.strftime("%Y-%m-%d")
+    end_date = params[:end_date].to_date.strftime("%Y-%m-%d")
+    @dogs = Dog.where(
+      "id NOT IN (
+        SELECT dog_id
+        FROM bookings
+        WHERE start <= ? AND \"end\" >= ?
+      )",
+      end_date, start_date
+    )
+    raise
+  else
+    @dogs = Dog.all
+  end
 ```
 
 #### pg_search, page refresh:
