@@ -3,6 +3,7 @@
 #### AJAX:
 
 ```js
+// search stimulus controller
 static targets = ["restaurants"];
 
 async search() {
