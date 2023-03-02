@@ -22,7 +22,16 @@ async search() {
   const query = this.element.value;
 
   const response = await fetch(`/restaurants?query=${query}.json`);
-  const html = await response.json();
+  const results = await response.json();
+  
+  const html = results.map((restaurant) => {
+      return `
+        <div class="restaurant">
+          <h2>${restaurant.name}</h2>
+          <p>${restaurant.description}</p>
+        </div>
+      `;
+    }).join('');
 
   this.resultsTarget.innerHTML = html;
 }
