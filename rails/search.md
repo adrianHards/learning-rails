@@ -21,7 +21,7 @@ static targets = ["restaurants"];
 async search() {
   const query = this.element.value;
 
-  const response = await fetch(`/restaurants?query=${query}`);
+  const response = await fetch(`/restaurants?query=${query}.json`);
   const html = await response.json();
 
   this.resultsTarget.innerHTML = html;
