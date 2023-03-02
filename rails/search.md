@@ -22,7 +22,7 @@ async search() {
   const query = this.element.value;
 
   const response = await fetch(`/restaurants?query=${query}`);
-  const html = await response.text();
+  const html = await response.json();
 
   this.resultsTarget.innerHTML = html;
 }
