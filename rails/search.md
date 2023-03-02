@@ -33,12 +33,12 @@ async search() {
 def index
   if params[:query].present?
     @restaurants = Restaurant.where(
-    "id NOT IN (
-      SELECT restaurant_id
-      FROM bookings
-      WHERE start_date <= ? AND end_date >= ?
-    )",
-    end_date, start_date
+      "id NOT IN (
+        SELECT restaurant_id
+        FROM bookings
+        WHERE start_date <= ? AND end_date >= ?
+      )",
+      end_date, start_date
   )
   else
     @restaurants = Restaurant.all
