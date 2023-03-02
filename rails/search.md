@@ -2,6 +2,19 @@
 
 #### AJAX:
 
+```js
+static targets = ["restaurants"];
+
+async search() {
+  const query = this.element.value;
+
+  const response = await fetch(`/restaurants?query=${query}`);
+  const html = await response.text();
+
+  this.resultsTarget.innerHTML = html;
+}
+```
+
 ```ruby
 # restaurant controller
 def index
@@ -20,12 +33,14 @@ def index
 
 ```html.erb
 <!-- index.html.erb -->
-<div>
-  <% @restaurants.each do |restaurant| %>
-    <div class="restaurant">
-      <h2><%= restaurant.name %></h2>
-      <p><%= restaurant.description %></p>
-    </div>
-  <% end %>
+<div data-controller="search">
+  <div data-search-target="restaurants">
+    <% @restaurants.each do |restaurant| %>
+      <div class="restaurant">
+        <h2><%= restaurant.name %></h2>
+        <p><%= restaurant.description %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
 ```
