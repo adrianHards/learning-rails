@@ -1,12 +1,3 @@
-```
-  if params[:query].present?
-    # search
-  else
-    @restaurants = Restaurant.all
-  end
-  
-```
-
 #### AJAX:
 
 ```html.erb
@@ -40,6 +31,12 @@ async search() {
 ```ruby
 # restaurant controller
 def index
+  if params[:query].present?
+    # search
+  else
+    @restaurants = Restaurant.all
+  end
+  
   respond_to do |format|
     format.html
     format.json { render json: @restaurants }
