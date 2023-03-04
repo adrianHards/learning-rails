@@ -1,3 +1,5 @@
+token on connect
+
 ```
 import { Controller } from "@hotwired/stimulus"
 
