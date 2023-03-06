@@ -19,6 +19,7 @@
 - ~~[Seed](/rails/seed.md)~~
 - ~~[Search](/rails/search.md)~~
 - ~~[Simple Form](/rails/simple.md)~~
+- ~~[Testing](/rails/testing.md)~~
 <!-- ~~[Views](rails/views.md)~~
 - ~~[Forms](rails/forms.md)~~
 - ~~[RSpec](rails/rspec.md)~~
