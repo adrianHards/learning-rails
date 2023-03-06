@@ -9,7 +9,7 @@
 # Ruby on Rails
 
 - [Setup](/setup.md)
-- ~~[Debugging](rails/debug.md)~~
+
 - [Devise](/rails/devise.md)
 - ~~[Models](/rails/models.md)~~
 - [Migrations](/rails/migrations.md)
@@ -21,6 +21,7 @@
 - ~~[Simple Form](/rails/simple.md)~~
 - ~~[Testing](/rails/testing.md)~~
 <!-- ~~[Views](rails/views.md)~~
+- ~~[Debugging](rails/debug.md)~~
 - ~~[Forms](rails/forms.md)~~
 - ~~[RSpec](rails/rspec.md)~~
 - ~~[Style Guide](rails/style.md)~~
