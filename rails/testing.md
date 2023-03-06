@@ -80,3 +80,16 @@ jobs:
           POSTGRES_PASSWORD: postgres
 
 ```
+
+#### Github Actions
+```
+# config/database.yml.github-actions
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: github-actions
+  pool: 20
+  username: <%= ENV["POSTGRES_USER"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+```
