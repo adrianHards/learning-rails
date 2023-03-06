@@ -35,6 +35,8 @@ e.g. `rails generate rspec:model User`
 `bundle exec rspec` to run all the RSpec tests in your project <br>
 `bundle exec rspec spec/models/user_spec.rb` to run a specific test file. 
 
+<br> 
+
 #### Continuous Integration
 
 ```yml
