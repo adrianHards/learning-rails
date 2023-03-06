@@ -82,8 +82,8 @@ jobs:
 ```
 
 #### Github Actions
+Create a new file in config/database.yml.github-actions
 ```
-# config/database.yml.github-actions
 test:
   adapter: postgresql
   host: localhost
