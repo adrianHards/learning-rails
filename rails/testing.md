@@ -37,7 +37,7 @@ e.g. `rails generate rspec:model User`
 
 #### Continuous Integration
 
-```ruby
+```yml
 name: github workflow
 on:
   push:
