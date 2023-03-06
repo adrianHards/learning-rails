@@ -1,4 +1,4 @@
-#### Add RSpec
+#### Adding RSpec
 
 ##### Remove Minitest
 
