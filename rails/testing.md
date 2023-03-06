@@ -38,7 +38,7 @@ e.g. `rails generate rspec:model User`
 <br> 
 
 #### Continuous Integration
-create `.github/workflows.ci.yml`
+Create `.github/workflows/ci.yml` in the root directory of your repository
 ```yml
 name: github workflow
 on:
@@ -82,7 +82,7 @@ jobs:
 ```
 
 #### [Github Actions](https://www.pibit.nl/github/actions/rails/postgres/rspec/tutorial/example/2019/09/23/github-actions-with-rails-postgres-and-rspec/)
-Create `config/database.yml.github-actions`
+Create `config/database.yml.github-actions` and add the following code:
 ```
 test:
   adapter: postgresql
