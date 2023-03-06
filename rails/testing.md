@@ -38,7 +38,7 @@ e.g. `rails generate rspec:model User`
 <br> 
 
 #### Continuous Integration
-
+create the following file inside the following folders: .github/workflows.ci.yml
 ```yml
 name: github workflow
 on:
