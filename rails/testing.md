@@ -36,8 +36,3 @@ e.g. `rails generate rspec:model User`
 `bundle exec rspec spec/models/user_spec.rb` to run a specific test file. 
 
 #### Continuous Integration
-
-
-Notes:
-
-rails_helper.rb makes the Rails environment available within the tests.
