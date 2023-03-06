@@ -10,15 +10,15 @@
 
 - [Setup](/setup.md)
 - [Devise](/rails/devise.md)
-- ~~[Models](/rails/models.md)~~
+- [Models](/rails/models.md) 🚧
 - [Migrations](/rails/migrations.md)
 - [Rails as a backend API](/rails/react.md)
-- ~~[Resources](/rails/resources.md)~~
+- [Resources](/rails/resources.md) 🚧
 - [Routes](/rails/routes.md)
-- ~~[Seed](/rails/seed.md)~~
-- ~~[Search](/rails/search.md)~~
-- ~~[Simple Form](/rails/simple.md)~~
-- ~~[Testing](/rails/testing.md)~~
+- [Seed](/rails/seed.md) 🚧
+- [Search](/rails/search.md) 🚧
+- [Simple Form](/rails/simple.md) 🚧
+- [Testing](/rails/testing.md) 🚧
 <!-- ~~[Views](rails/views.md)~~
 - ~~[Debugging](rails/debug.md)~~
 - ~~[Forms](rails/forms.md)~~
@@ -30,9 +30,9 @@
 ## Incomplete
 
 ### Ruby
-- ~~[Methods](/ruby/methods.md)~~
-- ~~[OOP](/ruby/oop.md)~~
-- ~~[Operators](/ruby/operators.md)~~
+- [Methods](/ruby/methods.md) 🚧
+- [OOP](/ruby/oop.md) 🚧
+- [Operators](/ruby/operators.md) 🚧
 
 ### Other
 
