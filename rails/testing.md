@@ -1,11 +1,17 @@
 #### Add RSpec
 
+##### Remove Minitest
+
 If necessary, remove the minitest boilerplate (`rm -rf test/`) and (`gem 'minitest'` from your `Gemfile`. Replace with: 
 
+##### Add RSpec 
 ```ruby
 # Gemfile
-gem 'rspec-rails'
+group :development, :test do
+  gem 'rspec-rails'
 ```
+
+
 Run the following to generate the necessary files and directories for RSpec:
 ```
 bundle install
@@ -20,5 +26,18 @@ module App
   class Application < Rails::Application
   config.generators.test_framework = :rspec
 ```
+##### Generate RSpec tests
+If you've already created a Rails model and you want to add RSpec tests for it, do the following: <br>
+e.g. `rails generate rspec:model User`
+
+##### Run tests:
+
+`bundle exec rspec` to run all the RSpec tests in your project <br>
+`bundle exec rspec spec/models/user_spec.rb` to run a specific test file. 
 
 #### Continuous Integration
+
+
+Notes:
+
+rails_helper.rb makes the Rails environment available within the tests.
