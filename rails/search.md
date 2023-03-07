@@ -55,9 +55,10 @@ Finally we have the movie card partial, which we'll add a new stimulus controlle
   <% end %>
 </div>     
 ```
+## Search
 ### Stimulus controller
 
-#### Quick notes!
+##### Quick notes!
 * A **URI** is a string of characters that identifies a resource, while a **URL** is a type of URI that identifies the location of a resource and specifies the protocol to use to access it. <br>
 * use `rails g stimulus search-movies` to generate your Stimulus controller <br>
 * check your target values with:
@@ -66,21 +67,23 @@ static targets = ["form", "input", "list"]
 
 connect() {
   console.log(this.formTarget)
-  console.log(this.inputTarget)
+  console.log(this.inputTarget.value) // whatever the use has typed in to the search bar
   console.log(this.listTarget)
 }
 ```
 * `this.formTarget.action` will tell you what the form is submitting to (i.e. the URI) by default along with any params (e.g. `http://localhost:3000/movies?query=batman`)
 
-#### search_movies_controller.js
+##### search_movies_controller.js
 
 Here, we define the update action. We trigger an HTTP request so that our web browser can communicate with our server/database. 
 
 ```js
 update() {
   const url = `${this.formTarget.action}?query=${this.inputTarget.value}`
-  fetch(url, { headers: { "Accept": "text/plain" } })
-    .then(response => response.text()) // the response is expected to be plain text so we use .text()
+  fetch(url, { 
+    headers: { "Accept": "text/plain" } 
+  }) // pass header to say what format you want to receive response back in
+    .then(response => response.text()) // the response is expected to be plain text so we parse with .text()
     .then((data) => {
       this.listTarget.outerHTML = data
     })
@@ -89,6 +92,27 @@ update() {
 
 ### Rails controller
 
+##### Movies controller
+
+```ruby
+  def index
+    @movies = Movie.order(year: :desc, title: :asc)
+
+    if params[:query].present?
+      @movies = @movies.where("title ILIKE ?", "%#{params[:query]}%")
+    end
+
+    respond_to do |format|
+      # if HTML provide full index.html.erb page
+      format.html
+      # if text, render list partial where locals are @movies as needed in the partial coming from the above search
+      format.text { render partial: "movies/list", locals: { movies: @movies }, formats: [:html] }
+      # without formats: [:html] would be looking for a .txt partial
+    end
+  end
+```
+
+## Update
 
 
 
