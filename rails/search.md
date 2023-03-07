@@ -1,5 +1,4 @@
 Docs:
-> [Le Wagon](https://kitt.lewagon.com/camps/1108/lectures/05-Rails%2F09-Airbnb-SMTP#source) <br>
 > [pg_search](https://github.com/Casecommons/pg_search)
 
 #### Form
