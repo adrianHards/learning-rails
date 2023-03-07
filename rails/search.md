@@ -1,10 +1,24 @@
 
 ## Movies
-Lets assume we want to search our database of movies and update our index every time there is a `keyup` event **without** a page refresh. Our html is made up of three files, the index and two partials. On the index.html.erb file we attach a target to the form itself and the search bar. Note that the stimulus controller, `search-movies` contains all of the targets and the `<%= render "list", movies: @movies %>`. Note we pre-fill the input field with the value of the :query parameter if it is present in the URL query string. 
+Lets assume we want to search our database of movies and update our index every time there is a `keyup` event **without** a page refresh. Our html is made up of three files, the index and two partials. 
+
+#### Quick notes!
+`rails g stimulus search-movies` to generate your Stimulus controller <br>
+check your target values:
+```js
+static targets = ["form", "input", "list"]
+
+connect() {
+  console.log(this.formTarget)
+  console.log(this.inputTarget)
+  console.log(this.listTarget)
+}
+```
 
 ### Views
 
 ##### index.html.erb
+On the index.html.erb file we attach a target to the form itself and the search bar. Note that the stimulus controller, `search-movies`, contains all of the targets and the `<%= render "list", movies: @movies %>`. Note we pre-fill the input field with the value of the :query parameter if it is present in the URL query string. Finally, we use the Rails form helper [form_with](https://guides.rubyonrails.org/form_helpers.html). 
 ```html.erb
 <div data-controller="search-movies">
   <%= form_with url: movies_path, method: :get, html: {class: "mb-4", data: { search_movies_target: 'form' }} do |f| %>
