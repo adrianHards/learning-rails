@@ -1,9 +1,8 @@
-Docs:
-> [pg_search](https://github.com/Casecommons/pg_search)
 
-### Movies example
+## Movies
+Lets assume we want to search our database of movies and update our index every time there is a `keyup` event **without** a page refresh. Our html is made up of three files, the index and two partials. On the index.html.erb file we attach a target to the form itself and the search bar. Note that the stimulus controller, `search-movies` contains all of the targets and the `<%= render "list", movies: @movies %>`. Note we pre-fill the input field with the value of the :query parameter if it is present in the URL query string. 
 
-Lets assume we want to search our database of movies and update our index every time there is a `keyup` event **without** a page refresh. Our html is made up of three files, the index and two partials. On the index.html.erb file we attach a target to the form itself and the search bar. Note that the data-controller, `search-movies` contains all of the targets and the `<%= render "list", movies: @movies %>`. Note we pre-fill the input field with the value of the :query parameter if it is present in the URL query string. 
+### Views
 
 ##### index.html.erb
 ```html.erb
@@ -20,7 +19,7 @@ Lets assume we want to search our database of movies and update our index every 
   <%= render "list", movies: @movies %>
 </div>
 ```
-
+Lets also add a target to the movies list, which we'll update with AJAX as the user searches a movie. Notice it still falls under _view_ of the `search-movies` controller. 
 ##### _list.html.erb
 ```html.erb
 <div data-search-movies-target="list">
@@ -31,15 +30,45 @@ Lets assume we want to search our database of movies and update our index every 
   </div>
 </div>
 ```
+Finally we have the movie card partial, which we'll add a new stimulus controller to which we'll use to update a movie with AJAX. This will therefore involve a PATCH request. This will be performed via a simple form, which is initial hidden until the Bootstrap class d-none is removed via the displayForm action. 
 
-##### _list.html.erb
+##### _movie_infos.html.erb
+```html.erb
+<div class="movie-card" data-controller="edit-movie" data-edit-movie-target="card">
+  <%= image_tag movie.image_url %>
+
+  <div class="movie-infos" data-edit-movie-target="infos">
+    <h2><%= movie.title </h2>
+    <button aria-label="Edit movie">
+      <i class="fa-solid fa-pen fa-xs ml-2" data-action="click->edit-movie#displayForm"></i>
+    </button>
+  </div>
+
+  <%= simple_form_for movie, html: {class: "d-none", data: { edit_movie_target: 'form', action: 'submit->edit-movie#update' }} do |f| %>
+    <%= f.input :title %>
+    <%= f.input :year %>
+    <%= f.submit "update movie", class: "btn btn-primary" %>
+  <% end %>
+</div>     
+```
+
+### Rails controller
+
+
+### Stimulus controller
+
+
+
+
+
+
+
 
 
 
 
 
 #### Form
-
 ```html.erb
 <%= form_with url: dogs_path, method: :get, class: "d-flex" do %>
   <%= date_field_tag :start_date,
@@ -75,6 +104,8 @@ Lets assume we want to search our database of movies and update our index every 
     @dogs = Dog.all
   end
 ```
+Docs:
+> [pg_search](https://github.com/Casecommons/pg_search)
 
 #### pg_search, page refresh:
 ```ruby
