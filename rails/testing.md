@@ -1,5 +1,5 @@
 > [RSpec](#adding-rspec) <br>
-> [Workflows](#workflow)
+> [Workflows](#workflow) <br>
 
 ---
 
@@ -52,7 +52,7 @@ A workflow is a configurable automated process made up of one or more jobs.
 
 Your new GitHub Actions workflow file is now installed in your repository and will run automatically each time someone pushes a change to the main branch or when a pull request is opened or updated against the main branch. [See](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#viewing-the-activity-for-a-workflow-run) for the execution history. 
 
-Understanding [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) and its [Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions).
+See the following docs for more info on [Service Containers](https://docs.github.com/en/actions/using-containerized-services/about-service-containers) [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) and its [Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions).
 
 ```yml
 name: github workflow
@@ -62,20 +62,33 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  build:
+  # Label of the container job
+  build-container:
+    # Containers must run in Linux based operating systems
     runs-on: ubuntu-latest
+    # Service containers to run with `build-container`
     services:
+      # Label used to access the service container
       postgres:
-        image: postgres:11
+        # Docker Hub image
+        image: postgres:14
         ports:
           - 5432:5432
+        # Provide the username and password for postgres
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
-        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready 
+          --health-interval 10s 
+          --health-timeout 5s 
+          --health-retries 5
     steps:
-      - uses: actions/checkout@v1
-      - uses: ruby/setup-ruby@v1
+      # Downloads a copy of the code in your repository before running CI tests
+      - uses: actions/checkout@v3 
+      # runs 'bundle install' and caches installed gems automatically
+      - uses: ruby/setup-ruby@v1 
         with:
           bundler-cache: true
       - name: Setup Database
@@ -107,3 +120,4 @@ test:
   username: <%= ENV["POSTGRES_USER"] %>
   password: <%= ENV["POSTGRES_PASSWORD"] %>
 ```
+
