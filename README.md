@@ -8,7 +8,7 @@
 
 # Ruby on Rails
 
-- [Setup](/setup.md)
+- [Setup - with and without AJAX](/setup.md)
 - [Devise](/rails/devise.md)
 - [Models](/rails/models.md) 🚧
 - [Migrations](/rails/migrations.md)
