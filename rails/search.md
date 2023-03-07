@@ -57,7 +57,7 @@ Finally we have the movie card partial, which we'll add a new stimulus controlle
 ```
 
 ## Quick notes!
-* you might need to pass the CSRF token when making a PATCH request (see [here](https://github.com/adrianHards/rails-guide/blob/main/rails/ajax.md) or below)
+* you might need to pass the [CSRF](https://developer.mozilla.org/en-US/docs/Glossary/CSRF) token when making a PATCH request (see [here](https://github.com/adrianHards/rails-guide/blob/main/rails/ajax.md) or below)
 * A **URI** is a string of characters that identifies a resource, while a **URL** is a type of URI that identifies the location of a resource and specifies the protocol to use to access it. <br>
 * use `rails g stimulus search-movies` to generate your Stimulus controller <br>
 * check your target values with:
