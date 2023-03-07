@@ -34,7 +34,7 @@ Lets also add a target to the movies list, which we'll update with AJAX as the u
   </div>
 </div>
 ```
-Finally we have the movie card partial, which we'll add a new stimulus controller to which we'll use to update a movie with AJAX. This will therefore involve a PATCH request. This will be performed via a simple form, which is initial hidden until the Bootstrap class d-none is removed via the displayForm action. 
+Finally we have the movie card partial, which we'll add a new stimulus controller to which we'll use to update a movie with AJAX. This will therefore involve a PATCH request. This will be performed via a simple form, which is initially hidden until the Bootstrap class d-none is removed via the displayForm action. We add the target `card` to the movie-card, as this will be what is updated. An action that reveals the edit form. And an action when a user submits the form. 
 
 ##### _movie_infos.html.erb
 ```html.erb
@@ -43,8 +43,8 @@ Finally we have the movie card partial, which we'll add a new stimulus controlle
 
   <div class="movie-infos" data-edit-movie-target="infos">
     <h2><%= movie.title </h2>
-    <button aria-label="Edit movie">
-      <i class="fa-solid fa-pen fa-xs ml-2" data-action="click->edit-movie#displayForm"></i>
+    <button aria-label="Edit movie" data-action="click->edit-movie#displayForm">
+      <i class="fa-solid fa-pen fa-xs ml-2"></i>
     </button>
   </div>
 
@@ -75,8 +75,6 @@ connect() {
 
 ## Search
 ### Stimulus controller
-
-
 * `this.formTarget.action` will tell you what the form is submitting to (i.e. the URI) by default along with any params (e.g. `http://localhost:3000/movies?query=batman`)
 
 ##### search_movies_controller.js
@@ -95,9 +93,8 @@ update() {
     })
 }
 ```
-
 ### Rails controller
-##### Movies controller
+##### movies_controller.rb
 
 ```ruby
   def index
@@ -116,12 +113,14 @@ update() {
     end
   end
 ```
-
 ## Update
+### Stimulus Controller
+##### search_movies_controller.js
+```js
 
-
+```
 ### Rails Controller
-##### Movies controller
+##### movies_controller.rb
 ```ruby
 def update
   @movie = Movie.find(params[:id])
@@ -151,7 +150,7 @@ end
 
 
 
-
+## Other
 
 #### Form
 ```html.erb
