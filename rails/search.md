@@ -117,7 +117,28 @@ update() {
 ### Stimulus Controller
 ##### search_movies_controller.js
 ```js
+static targets = ["infos", "form", "card"]
 
+displayForm() {
+  this.infosTarget.classList.add("d-none")
+  this.formTarget.classList.remove("d-none")
+}
+
+update(event) {
+  // stop a page refresh
+  event.preventDefault(); 
+  console.log(new FormData(this.formTarget))
+  const url = this.formTarget.action;
+  // accept plain text; fetch does get by default, but we need a PATCH; body is what user filled out in form and pass to backend
+  // new FormData object is built in to js; want to pass the HTML form and values from user, i.e. this.formTarget
+  fetch(url, {
+    method: "PATCH",
+    headers: { "Accept": "text/plain" },
+    body: new FormData(this.formTarget)
+  })
+    .then(response => response.text())
+    .then((data) => this.cardTarget.outerHTML = data)
+}
 ```
 ### Rails Controller
 ##### movies_controller.rb
@@ -127,7 +148,7 @@ def update
   @movie.update(movie_params)
 
   respond_to do |format|
-    format.html { redirect_to movies_path }
+    format.html { redirect_to movies_path } # if HTML requested, redirect to index
     format.text { render partial: "movies/movie_infos", locals: { movie: @movie }, formats: [:html] }
   end
 end
@@ -139,16 +160,7 @@ def movie_params
   params.require(:movie).permit(:title, :year)
 end
 ```
-
-
-
-
-
-
-
-
-
-
+Finally, look into [errors](https://kitt.lewagon.com/camps/1122/lectures/06-Projects%2F02-i18n#source) if you want edit form to not be hidden on submit if errors are present. 
 
 ## Other
 
