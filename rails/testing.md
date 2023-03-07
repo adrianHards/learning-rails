@@ -33,12 +33,21 @@ e.g. `rails generate rspec:model User`
 ##### Run tests:
 
 `bundle exec rspec` to run all the RSpec tests in your project <br>
-`bundle exec rspec spec/models/user_spec.rb` to run a specific test file. 
+`bundle exec rspec spec/models/user_spec.rb` to run a specific test file. <br>
+`bundle exec rspec spec/models` to run a specific folder. 
 
-<br> 
+---
 
-#### Continuous Integration
-Create `.github/workflows/ci.yml` in the root directory of your repository
+#### Workflow
+A workflow is a configurable automated process made up of one or more jobs. 
+1. create the `.github/workflows/` in the root directory of your repository
+2. create a new file called ci.yml and add the following code.
+3. commit these changes and push them to your GitHub repository.
+
+Your new GitHub Actions workflow file is now installed in your repository and will run automatically each time someone pushes a change to the main branch or when a pull request is opened or updated against the main branch. [See](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#viewing-the-activity-for-a-workflow-run) for the execution history. 
+
+Understanding [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) and its [Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions).
+
 ```yml
 name: github workflow
 on:
