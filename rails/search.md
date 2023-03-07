@@ -2,19 +2,6 @@
 ## Movies
 Lets assume we want to search our database of movies and update our index every time there is a `keyup` event **without** a page refresh. Our html is made up of three files, the index and two partials. 
 
-#### Quick notes!
-`rails g stimulus search-movies` to generate your Stimulus controller <br>
-check your target values:
-```js
-static targets = ["form", "input", "list"]
-
-connect() {
-  console.log(this.formTarget)
-  console.log(this.inputTarget)
-  console.log(this.listTarget)
-}
-```
-
 ### Views
 
 ##### index.html.erb
@@ -26,7 +13,10 @@ On the index.html.erb file we attach a target to the form itself and the search 
     <%= f.text_field :query,
                      class: "form-control",
                      value: params[:query],
-                     data: { search_movies_target: 'input', action: 'keyup->search-movies#update' }
+                     data: { 
+                      search_movies_target: 'input', 
+                      action: 'keyup->search-movies#update' 
+                     }
                      %>
   <% end %>
     
@@ -65,11 +55,42 @@ Finally we have the movie card partial, which we'll add a new stimulus controlle
   <% end %>
 </div>     
 ```
+### Stimulus controller
+
+#### Quick notes!
+* A **URI** is a string of characters that identifies a resource, while a **URL** is a type of URI that identifies the location of a resource and specifies the protocol to use to access it. <br>
+* use `rails g stimulus search-movies` to generate your Stimulus controller <br>
+* check your target values with:
+```js
+static targets = ["form", "input", "list"]
+
+connect() {
+  console.log(this.formTarget)
+  console.log(this.inputTarget)
+  console.log(this.listTarget)
+}
+```
+* `this.formTarget.action` will tell you what the form is submitting to (i.e. the URI) by default along with any params (e.g. `http://localhost:3000/movies?query=batman`)
+
+#### search_movies_controller.js
+
+Here, we define the update action. We trigger an HTTP request so that our web browser can communicate with our server/database. 
+
+```js
+update() {
+  const url = `${this.formTarget.action}?query=${this.inputTarget.value}`
+  fetch(url, { headers: { "Accept": "text/plain" } })
+    .then(response => response.text()) // the response is expected to be plain text so we use .text()
+    .then((data) => {
+      this.listTarget.outerHTML = data
+    })
+}
+```
 
 ### Rails controller
 
 
-### Stimulus controller
+
 
 
 
