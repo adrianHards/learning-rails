@@ -1,6 +1,43 @@
 Docs:
 > [pg_search](https://github.com/Casecommons/pg_search)
 
+### Movies example
+
+Lets assume we want to search our database of movies and update our index every time there is a `keyup` event **without** a page refresh. Our html is made up of three files, the index and two partials. On the index.html.erb file we attach a target to the form itself and the search bar. Note that the data-controller, `search-movies` contains all of the targets and the `<%= render "list", movies: @movies %>`. Note we pre-fill the input field with the value of the :query parameter if it is present in the URL query string. 
+
+##### index.html.erb
+```html.erb
+<div data-controller="search-movies">
+  <%= form_with url: movies_path, method: :get, html: {class: "mb-4", data: { search_movies_target: 'form' }} do |f| %>
+    <%= f.label :query, "Type a movie title" %>
+    <%= f.text_field :query,
+                     class: "form-control",
+                     value: params[:query],
+                     data: { search_movies_target: 'input', action: 'keyup->search-movies#update' }
+                     %>
+  <% end %>
+    
+  <%= render "list", movies: @movies %>
+</div>
+```
+
+##### _list.html.erb
+```html.erb
+<div data-search-movies-target="list">
+  <div class="movies">
+    <% movies.each do |movie| %>
+      <%= render "movie_infos", movie: movie %>
+    <% end %>
+  </div>
+</div>
+```
+
+##### _list.html.erb
+
+
+
+
+
 #### Form
 
 ```html.erb
