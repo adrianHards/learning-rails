@@ -55,10 +55,8 @@ Finally we have the movie card partial, which we'll add a new stimulus controlle
   <% end %>
 </div>     
 ```
-## Search
-### Stimulus controller
 
-##### Quick notes!
+## Quick notes!
 * A **URI** is a string of characters that identifies a resource, while a **URL** is a type of URI that identifies the location of a resource and specifies the protocol to use to access it. <br>
 * use `rails g stimulus search-movies` to generate your Stimulus controller <br>
 * check your target values with:
@@ -71,6 +69,14 @@ connect() {
   console.log(this.listTarget)
 }
 ```
+* `params` is a hash that contains the parameters submitted in the request. 
+* the `require` method ensures that the :movie parameter is present, and raises an error if it is not. This is a security measure to prevent unauthorized parameters from being passed in the request.
+* The permit method specifies a list of allowed parameters for the Movie model. In this case, only the :title and :year parameters are allowed. This is also a security measure that prevents users from submitting unwanted or malicious parameters.
+
+## Search
+### Stimulus controller
+
+
 * `this.formTarget.action` will tell you what the form is submitting to (i.e. the URI) by default along with any params (e.g. `http://localhost:3000/movies?query=batman`)
 
 ##### search_movies_controller.js
@@ -85,13 +91,12 @@ update() {
   }) // pass header to say what format you want to receive response back in
     .then(response => response.text()) // the response is expected to be plain text so we parse with .text()
     .then((data) => {
-      this.listTarget.outerHTML = data
+      this.listTarget.outerHTML = data // replace whole piece of DOM with data
     })
 }
 ```
 
 ### Rails controller
-
 ##### Movies controller
 
 ```ruby
@@ -105,7 +110,7 @@ update() {
     respond_to do |format|
       # if HTML provide full index.html.erb page
       format.html
-      # if text, render list partial where locals are @movies as needed in the partial coming from the above search
+      # if text, render list partial only, not whole page, where locals are @movies as needed in the partial coming from the above search
       format.text { render partial: "movies/list", locals: { movies: @movies }, formats: [:html] }
       # without formats: [:html] would be looking for a .txt partial
     end
@@ -114,6 +119,27 @@ update() {
 
 ## Update
 
+
+### Rails Controller
+##### Movies controller
+```ruby
+def update
+  @movie = Movie.find(params[:id])
+  @movie.update(movie_params)
+
+  respond_to do |format|
+    format.html { redirect_to movies_path }
+    format.text { render partial: "movies/movie_infos", locals: { movie: @movie }, formats: [:html] }
+  end
+end
+
+private
+
+# sanitized hash
+def movie_params
+  params.require(:movie).permit(:title, :year)
+end
+```
 
 
 
