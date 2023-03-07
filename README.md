@@ -19,6 +19,7 @@
 - [Search](/rails/search.md) 🚧
 - [Simple Form](/rails/simple.md) 🚧
 - [Testing](/rails/testing.md) 🚧
+- [Websocket](/rails/websocket.md) 🚧
 <!-- ~~[Views](rails/views.md)~~
 - ~~[Debugging](rails/debug.md)~~
 - ~~[Forms](rails/forms.md)~~
