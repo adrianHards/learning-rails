@@ -30,11 +30,12 @@ module App
 If you've already created a Rails model and you want to add RSpec tests for it, do the following: <br>
 e.g. `rails generate rspec:model User`
 
-##### Run tests:
+##### [Run tests](https://manny.codes/7-ways-to-selectively-run-rspec-tests/):
 
 `bundle exec rspec` to run all the RSpec tests in your project <br>
 `bundle exec rspec spec/models/user_spec.rb` to run a specific test file. <br>
-`bundle exec rspec spec/models` to run a specific folder. 
+`bundle exec rspec spec/models` to run a specific folder. <br>
+`bundle exec rspec spec/models/user_spec.rb --only-failures` run only tests that are failing. 
 
 ---
 
@@ -90,8 +91,7 @@ jobs:
 
 ```
 
-#### [Github Actions](https://www.pibit.nl/github/actions/rails/postgres/rspec/tutorial/example/2019/09/23/github-actions-with-rails-postgres-and-rspec/)
-Create `config/database.yml.github-actions` and add the following code:
+Create `config/database.yml.github-actions` and add the following [code](https://www.pibit.nl/github/actions/rails/postgres/rspec/tutorial/example/2019/09/23/github-actions-with-rails-postgres-and-rspec/)):
 ```
 test:
   adapter: postgresql
