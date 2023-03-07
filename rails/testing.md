@@ -72,6 +72,7 @@ jobs:
       postgres:
         # Docker Hub image
         image: postgres:14
+        # map the container's port 5432 to the host's port 5432
         ports:
           - 5432:5432
         # Provide the username and password for postgres
@@ -85,7 +86,7 @@ jobs:
           --health-timeout 5s 
           --health-retries 5
     steps:
-      # Downloads a copy of the code in your repository before running CI tests
+      # downloads a copy of the code in your repository before running CI tests
       - uses: actions/checkout@v3 
       # runs 'bundle install' and caches installed gems automatically
       - uses: ruby/setup-ruby@v1 
@@ -96,6 +97,7 @@ jobs:
           cp config/database.yml.github-actions config/database.yml
           bundle exec rake db:create
           bundle exec rake db:schema:load
+        # use environment variables to pass configuration information to your workflow steps
         env:
           RAILS_ENV: test
           POSTGRES_USER: postgres
