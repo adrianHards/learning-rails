@@ -269,7 +269,7 @@ async search() {
       `;
     }).join('');
 
-  this.resultsTarget.innerHTML = html;
+  this.restaurantsTarget.innerHTML = html;
 }
 ```
 
