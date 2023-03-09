@@ -8,7 +8,7 @@
 
 # Ruby on Rails
 
-- [Setup - with and without AJAX](/setup.md)
+- [Setup](/setup.md)
 - [Devise](/rails/devise.md)
 - [Models](/rails/models.md) 🚧
 - [Migrations](/rails/migrations.md)
@@ -16,7 +16,7 @@
 - [Resources](/rails/resources.md) 🚧
 - [Routes](/rails/routes.md)
 - [Seed](/rails/seed.md) 🚧
-- [Search](/rails/search.md) 🚧
+- [Search - with and without AJAX](/rails/search.md) 🚧
 - [Simple Form](/rails/simple.md) 🚧
 - [Testing](/rails/testing.md) 🚧
 - [Websocket](/rails/websocket.md) 🚧
