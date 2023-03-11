@@ -27,9 +27,6 @@
 - ~~[Style Guide](rails/style.md)~~
 - ~~[AJAX](rails/ajax.md)~~ -->
 
-
-## Incomplete
-
 ### Ruby
 - [Methods](/ruby/methods.md) 🚧
 - [OOP](/ruby/oop.md) 🚧
