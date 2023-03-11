@@ -6,7 +6,7 @@
 <strong>Ruby</strong>: 3.1.2p20
 <br>
 
-# Ruby on Rails
+## Ruby on Rails
 
 - [Setup](/setup.md)
 - [Devise](/rails/devise.md)
@@ -27,12 +27,12 @@
 - ~~[Style Guide](rails/style.md)~~
 - ~~[AJAX](rails/ajax.md)~~ -->
 
-### Ruby
+## Ruby
 - [Methods](/ruby/methods.md) 🚧
 - [OOP](/ruby/oop.md) 🚧
 - [Operators](/ruby/operators.md) 🚧
 
-### Other
+## Other
 
 #### Figma
 - [basics](/other/figma.md)
