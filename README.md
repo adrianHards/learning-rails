@@ -7,7 +7,6 @@
 <br>
 
 ## Ruby on Rails
-- [AJAX](/ajax.md) 🚧
 - [Setup](/setup.md)
 - [Devise](/rails/devise.md)
 - [Models](/rails/models.md) 🚧
@@ -20,6 +19,7 @@
 - [Simple Form](/rails/simple.md) 🚧
 - [Testing](/rails/testing.md) 🚧
 - [Websocket](/rails/websocket.md) 🚧
+- [AJAX](/rails/ajax.md) 🚧
 <!-- ~~[Views](rails/views.md)~~
 - ~~[Debugging](rails/debug.md)~~
 - ~~[Forms](rails/forms.md)~~
