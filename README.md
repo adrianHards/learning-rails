@@ -7,7 +7,7 @@
 <br>
 
 ## Ruby on Rails
-
+- [AJAX](/ajax.md) 🚧
 - [Setup](/setup.md)
 - [Devise](/rails/devise.md)
 - [Models](/rails/models.md) 🚧
