@@ -2,6 +2,10 @@
 💖 [see](https://www.doabledanny.com/git-workflows)
 <br><br>
 
+#### git add -p
+`git add -p` stage parts of a changed file; `y` stage the chunk, `n` ignore the chunk, `s` split it into smaller chunks, `e` manually edit the chunk, `q` to exit.
+
+
 #### git commit
 ##### [git revert or git reset](https://www.freecodecamp.org/news/git-revert-commit-how-to-undo-the-last-commit/)
 `git reset --soft HEAD~1` if commit exists only on local; will re-write commit history! <br>
