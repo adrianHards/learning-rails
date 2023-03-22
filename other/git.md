@@ -4,11 +4,11 @@
 
 #### git add -p
 `git add -p` to stage parts of a changed file; 
-- `y` stage the chunk
-- `n` ignore the chunk
-- `s` split it into smaller chunks
-- `e` manually edit the chunk
-- `q` to exit.
+> `y` stage the chunk
+> `n` ignore the chunk
+> `s` split it into smaller chunks
+> `e` manually edit the chunk
+> `q` to exit.
 
 
 #### git commit
