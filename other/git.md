@@ -10,6 +10,11 @@
 > `e` manually edit the chunk
 > `q` to exit.
 
+#### git stash
+Accidentally been working in your master branch?
+* `git stash`
+* `git checkout -b new-branch`
+* `git stash pop` to bring over all of the changes you made in the master branch into the new branch 
 
 #### git commit
 ##### [git revert or git reset](https://www.freecodecamp.org/news/git-revert-commit-how-to-undo-the-last-commit/)
