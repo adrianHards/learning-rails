@@ -54,11 +54,12 @@ Hit me up if you'd like to contribute!
 #### VSCode
 - [VSCode shortcuts](/other/vscode.md)
 
+<!--
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=adrianHards/rails-guide" id="counter">
 </p>
 
-<!--
+
 [Back to Basics: HTTP Requests in Rails Apps](https://thoughtbot.com/blog/back-to-basics-http-requests)
 
 https://thoughtbot.com/upcase/videos/apis-http-json
