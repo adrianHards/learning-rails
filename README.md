@@ -6,6 +6,8 @@
 <strong>Last Update</strong>: March 2023
 <br>
 
+Hit me up if you'd like to contribute!
+
 ## Ruby on Rails
 - [Setup](/setup.md)
 - [Devise](/rails/devise.md)
