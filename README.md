@@ -1,11 +1,9 @@
 <div id="top"></div>
 
-🚧 = incomplete
-
-#### Optimised for
-
+🚧 = incomplete <br>
 <strong>Rails</strong>: 7.1.0.alpha <br>
-<strong>Ruby</strong>: 3.1.2p20
+<strong>Ruby</strong>: 3.1.2p20 <br>
+<strong>Last Update</strong>: March 2023
 <br>
 
 ## Ruby on Rails
