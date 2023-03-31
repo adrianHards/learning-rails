@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-## Getting Started with Rails
+## Getting Started with Ruby on Rails
 
 <p align="left">
   <!-- version -->
@@ -9,7 +9,6 @@
 </p>
 
 🚧 = incomplete <br>
-<br>
 
 This guide covers how best to start a new project, and how to implement certain features, with Ruby on Rails. It's far from complete, so hit me up if you'd like to contribute!
 
