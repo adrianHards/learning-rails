@@ -1,14 +1,17 @@
 <div id="top"></div>
 
-## Getting Started with Ruby on Rails
+## Getting Started with Rails
+
+<p align="left">
+  <!-- version -->
+  <img src='https://badgen.net/badge/Ruby/v3.1.2/blue' />
+  <img src='https://badgen.net/badge/Rails/v7.1.0/blue' />
+</p>
 
 🚧 = incomplete <br>
-<strong>Rails</strong>: 7.1.0.alpha <br>
-<strong>Ruby</strong>: 3.1.2p20 <br>
-<strong>Last Update</strong>: March 2023
 <br>
 
-Hit me up if you'd like to contribute!
+This guide covers how best to start a new project, and how to implement certain features, with Ruby on Rails. It's far from complete, so hit me up if you'd like to contribute!
 
 ## Ruby on Rails
 - [Setup](/setup.md)
