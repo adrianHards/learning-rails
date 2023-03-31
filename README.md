@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-## Ruby on Rails
+## Ruby on Rails Quick Start
 
 🚧 = incomplete <br>
 <strong>Rails</strong>: 7.1.0.alpha <br>
