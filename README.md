@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-## Ruby on Rails Guide for Beginners
+## Ruby on Rails
 
 🚧 = incomplete <br>
 <strong>Rails</strong>: 7.1.0.alpha <br>
