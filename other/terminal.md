@@ -1,3 +1,10 @@
+#### Ruby
+
+`which ruby`      where the Ruby executable is located on your system
+`which -a ruby`   where all Ruby executables are located on your system
+`ruby -v`         version number of the Ruby interpreter that is currently installed on your system
+`irb`             "interactive Ruby" and starts a console session where you can enter Ruby code
+
 #### [Brew](https://mac.install.guide/homebrew/4.html)
 `brew update` (update brew) <br>
 `brew upgrade` (upgrade packages) <br>
