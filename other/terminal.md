@@ -7,6 +7,7 @@
 `rbenv install -l`            list available versions of Ruby <br>
 `rbenv install <version no.>` install the specified version of Ruby <br>
 `rbenv global <version no.>` set the installed version as the global version <br>
+`gem env home` see location of installed gems
 
 #### [Brew](https://mac.install.guide/homebrew/4.html)
 `brew update` (update brew) <br>
