@@ -1,4 +1,9 @@
 #### git workflow
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/93719632/231290188-a4245eb4-bbca-408e-bc10-43b62c5ffad3.png" width="600">
+</div>
+  
 💖 [see](https://www.doabledanny.com/git-workflows)
 <br><br>
 
