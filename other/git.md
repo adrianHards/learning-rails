@@ -2,6 +2,10 @@
 💖 [see](https://www.doabledanny.com/git-workflows)
 <br><br>
 
+#### git init
+`git init` git creates a hidden directory called `.git` that it uses to track all changes to the files in the directory <br>
+`rm -rf .git` to remove this file <br>
+
 #### git add -p
 `git add -p` to stage parts of a changed file; 
 > `y` stage the chunk
