@@ -20,7 +20,19 @@
 `open <directory>` to open folder from terminal of target directory <br>
 `ls Desktop` list all contents of `Desktop` <br>
 `ls -A` list with -A flag to see all hidden dotfiles i.e. `.` files <br>
-`ls -l` the -l flag shows us the long format of files, that is, their extra information, which we can combine with others flags e.g. `ls -lA` <br>
+`ls -l` the -l flag shows us the `long format` of files, that is, their extra information, which we can combine with others flags e.g. `ls -lA` <br>
+`man ls` man is the `manual` command to get help with another command; type `q` when done <br>
+
+#### Creation
+`touch <filename>` to create a file <br>
+`rm <filename>` to remove the file <br>
+`cp someFile newFile` to copy a particular file <br>
+`mkdir <directoryname>` to create a directory <br>
+`rmdir <directoryname>` to remove the directory, but if the directory contains files ... <br>
+`rm -r <directoryname>` the switch, `-r` and tells `rm` to recursively remove all files within the directory as well as the directory itself <br>
+`mv newFile ../newFile` move a file to one directory above <br>
+`mv newFile ../someFile` as above, but rename said file to `someFile` <br>
+`mv newFile newerFile` simply rename the file without moving it <br>
 
 #### Node
 `nvm install --lts` (install the latest Long-Term Support (LTS) version of Node.js available through nvm) <br>
