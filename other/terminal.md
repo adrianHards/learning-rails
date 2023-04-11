@@ -25,6 +25,7 @@
 
 #### Creation
 `touch <filename>` to create a file <br>
+`echo "Git is Awesome" > gitText` to create a file and add text to it in one line <br>
 `rm <filename>` to remove the file <br>
 `cp someFile newFile` to copy a particular file <br>
 `mkdir <directoryname>` to create a directory <br>
