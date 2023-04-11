@@ -18,7 +18,9 @@
 #### Directory
 `pwd` print current directory <br>
 `open <directory>` to open folder from terminal of target directory <br>
-`ls Desktop` list all contents of `Desktop`
+`ls Desktop` list all contents of `Desktop` <br>
+`ls -A` list with -A flag to see all hidden dotfiles i.e. `.` files <br>
+`ls -l` the -l flag shows us the long format of files, that is, their extra information, which we can combine with others flags e.g. `ls -lA` <br>
 
 #### Node
 `nvm install --lts` (install the latest Long-Term Support (LTS) version of Node.js available through nvm) <br>
