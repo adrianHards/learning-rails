@@ -17,7 +17,8 @@
 
 #### Directory
 `pwd` print current directory <br>
-`open <directory>` to open folder from terminal of target directory
+`open <directory>` to open folder from terminal of target directory <br>
+`ls Desktop` list all contents of `Desktop`
 
 #### Node
 `nvm install --lts` (install the latest Long-Term Support (LTS) version of Node.js available through nvm) <br>
