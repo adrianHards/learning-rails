@@ -6,7 +6,7 @@
 1. create a repo on gitHub
 2. `git init` in folder on local machine
 3. `git remote -v` to check if there are any remotes (a remote is simply a record in a local repository that it's linked to another one)
-4. `git add remote origin <YOUR_REPOSITORY_ADDRESS_HERE>` modifying .git/config file in your local repository to link to your GitHub repo
+4. `git remote add origin <YOUR_REPOSITORY_ADDRESS_HERE>` modifying .git/config file in your local repository to link to your GitHub repo
 5. `git push -u origin main` transfer the code from the local repository to the one on GitHub
 * the `-u` switch means that these parameters should be saved as default, so next time you won't have to type "origin main", we can simply type 'git push'
 
