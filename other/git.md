@@ -7,6 +7,11 @@
 💖 [see](https://www.doabledanny.com/git-workflows)
 <br><br>
 
+#### master > main
+* `git config --global init.defaultBranch main` set main as the default branch name for all new Git repositories that you create in the future.
+* `git branch -m master main` renames the existing master branch to main
+
+
 #### forking
 
 1. fork a branch
