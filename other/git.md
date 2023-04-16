@@ -59,7 +59,7 @@ if the terminal asks you to enter a message:
 3. `esc` to escape
 4. type `:wq` to write & quit
 5. hit `enter`
-<br><br>
+<br>
 
 If you have made a PR and there are conflicts, it is better to resolve them locally. 
 1. `git pull origin main`
@@ -74,8 +74,6 @@ If there are changes on main you don't want to bring over, then do the following
 4. resolve conflicts, `git add` and `git commit --no-edit` (commit using the default commit message)
 5. `git checkout pr-branch`
 6. `git merge resolve-conflict`
-
-<br>
 
 #### git branch
 `git checkout branch-name` to switch to a local branch <br>
@@ -97,7 +95,6 @@ If there are changes on main you don't want to bring over, then do the following
 #### git checkout
 `git checkout --patch main` checkout specific hunks or lines from a file in the "main" branch from branch you're in
 
-<br><br>
 #### git reset
 resetting your local main to remote <br>
 1. create a branch and backup your work before `git checkout main`
@@ -105,19 +102,17 @@ resetting your local main to remote <br>
 3. `git reset --hard origin/main` to reset the local main branch to the remote repository
 4. `git clean -n` to see which files will be deleted  <br>
 5. `git clean -xdf` `-x` removes ignored files, `-d` removes untracked folders, `-f` removes untracked files
-<br><br>
+
 #### git diff
 `git diff branch1..branch2` see all differences between two branches <br>
 `git difftool` to see differences in VSCode (assuming you have it set up in `code ~/.gitconfig`)
-<br><br>
+
 #### git status
-<br><br>
+
 #### git log
 `git cherry -v main` to see logs of branch you're in
 `git lg` to see single 
-<br><br>
 
 #### RSpec
 `bundle exec rspec spec/models/filename_spec.rb` to run a specific file <br>
 note, `bundle exec` will run specific versions of Ruby and gems that are specified in your application's Gemfile
-<br><br>
