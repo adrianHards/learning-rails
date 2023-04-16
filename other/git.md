@@ -7,6 +7,14 @@
 💖 [see](https://www.doabledanny.com/git-workflows)
 <br><br>
 
+#### forking
+
+1. fork a branch
+2. `git remote add upstream git@github.com:adrianHards/rails-guide.git` add the remote, call it "upstream"
+3. `git fetch upstream`
+4. `git checkout main` 
+5. `git rebase upstream/main` modify your main branch such that any commits you've made that are not already present in upstream/main will be applied on top of it. This effectively rewrites the history of your branch, making it look as though your changes were made directly on top of the latest version of upstream/main.
+
 #### git remote
 1. create a repo on gitHub
 2. `git init` in folder on local machine
