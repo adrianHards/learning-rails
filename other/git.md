@@ -53,6 +53,8 @@ Accidentally been working in your master branch?
 if you accidentally type `git commit` without `-m`:
 * `i` to open editor
 * `:wq` to get out
+* `nano text.txt` to create a txt file and open the nano editor, `^` means ctrl
+* `cat text.txt` will show contents of file
 
 ##### [git revert or git reset](https://www.freecodecamp.org/news/git-revert-commit-how-to-undo-the-last-commit/)
 `git reset --soft HEAD~1` if commit exists only on local; will re-write commit history! <br>
