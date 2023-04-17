@@ -48,6 +48,12 @@ Accidentally been working in your master branch?
 * `git stash pop` to bring over all of the changes you made in the master branch into the new branch 
 
 #### git commit
+
+##### editor
+if you accidentally type `git commit` without `-m`:
+* `i` to open editor
+* `:wq` to get out
+
 ##### [git revert or git reset](https://www.freecodecamp.org/news/git-revert-commit-how-to-undo-the-last-commit/)
 `git reset --soft HEAD~1` if commit exists only on local; will re-write commit history! <br>
 `git revert <commit to revert>` if commit exists remotely; use `git lg` to find commit you want to revert to <br>
