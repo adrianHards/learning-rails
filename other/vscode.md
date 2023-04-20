@@ -4,6 +4,7 @@
 * `cmd P` to find file in current directory with particular name <br>
 
 Select a line or multiple lines of code and then click: <br>
+* `cmd x` deletes the entire line
 * `option arrow key` to move the code up ↑ or down ↓ a line
 * `⌘ /` to comment out your code, no matter which language you are using
 * `⇥` to indent the line(s) to the right or `⇧ ⇥` to reverse indent
