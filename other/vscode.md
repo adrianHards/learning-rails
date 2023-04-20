@@ -1,5 +1,6 @@
 ### VSCode
 
+* drag file into terminal to get its path
 * `cmd ⇧ F` to search all files in current directory for a particular bit of text
 * `cmd P` to find file in current directory with particular name <br>
 
