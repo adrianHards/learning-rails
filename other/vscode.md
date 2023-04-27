@@ -1,10 +1,11 @@
-### VSCode
+### VSCode/General Keyboard Shortcuts
 
 * drag file into terminal to get its path
 * `cmd ⇧ F` to search all files in current directory for a particular bit of text
 * `cmd P` to find file in current directory with particular name <br>
 
 Select a line or multiple lines of code and then click: <br>
+* `fn backspace` backwards deletion
 * `cmd x` deletes the entire line
 * `option arrow key` to move the code up ↑ or down ↓ a line
 * `⌘ /` to comment out your code, no matter which language you are using
