@@ -26,18 +26,6 @@
 - `user/folder/file.py` the relative path (location of a file or directory relative to the current working directory)
 - `which pipenv` display the location of an executable file in the system
 
-#### General
-
-absolute path, can be used from anywhere
-`user/folder/file.py` relative path
-`history`
-`!1000` index of command
-`ctrl r` keep using it to go backward in history
-`echo $PATH`
-`which pipenv` where folder of something is
-`cd /tmp` good place to play
-`vi text.txt`
-
 #### Directory
 
 - `pwd` print current directory
