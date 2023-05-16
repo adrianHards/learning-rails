@@ -111,7 +111,7 @@ jobs:
 
 ```
 
-Create `config/database.yml.github-actions` and add the following [code](https://www.pibit.nl/github/actions/rails/postgres/rspec/tutorial/example/2019/09/23/github-actions-with-rails-postgres-and-rspec/)):
+Create `config/database.yml.github-actions` and add the following [code](https://www.pibit.nl/github/actions/rails/postgres/rspec/tutorial/example/2019/09/23/github-actions-with-rails-postgres-and-rspec/):
 ```
 test:
   adapter: postgresql
