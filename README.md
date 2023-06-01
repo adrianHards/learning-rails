@@ -10,7 +10,7 @@
 
 🚧 = incomplete <br>
 
-This guide covers how best to start a new project and implement certain features with Ruby on Rails. It's far from complete, so hit me up if you'd like to contribute! I'm unlikely to maintain it beyond April 2023.
+This guide covers how best to start a new project and implement certain features with Ruby on Rails. It's far from complete, so hit me up if you'd like to contribute! Owing to other commitments, I'm unlikely to maintain it beyond April 2023.
 
 ## Ruby on Rails
 - [Setup](/setup.md)
